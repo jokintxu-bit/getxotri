@@ -7,6 +7,13 @@
     <!-- Color de la barra de direcciones en móviles -->
     <meta name="theme-color" content="#7f1d1d">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-family: 'Bauhaus 93';
+            src: local('Bauhaus 93'), local('Bauhaus93');
+        }
+        .font-bauhaus { font-family: 'Bauhaus 93', 'Arial Rounded MT Bold', sans-serif; }
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
 
@@ -15,7 +22,7 @@
         <div class="container mx-auto flex justify-between items-center">
             <a href="index.html" class="flex items-center space-x-3 hover:opacity-90 transition">
                 <img src="images/logo.png" alt="Logo Getxo Triatloi Taldea" class="h-12 w-auto bg-white rounded-full p-1">
-                <h1 class="text-xl md:text-2xl font-bold tracking-tighter">GETXO<span class="text-gray-300">TRI</span></h1>
+                <h1 class="text-xl md:text-3xl font-bauhaus tracking-wide">GETXO<span class="text-gray-300">TRI</span></h1>
             </a>
             <ul class="flex space-x-6">
                 <li><a href="index.html#entrenamientos" class="hover:text-gray-300 transition">Entrenamientos</a></li>
@@ -29,21 +36,32 @@
         <!-- Hero de la página -->
         <div class="bg-white py-20 border-b border-gray-100">
             <div class="container mx-auto px-4 text-center">
-                <h2 class="text-sm font-bold text-red-700 uppercase tracking-[0.3em] mb-4">Forma parte del equipo</h2>
-                <h3 class="text-4xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">Desarrolla tu potencial<br>con nosotros.</h3>
-                <p class="text-xl text-gray-500 max-w-2xl mx-auto">Te acompañamos en cada paso, desde tu primera brazada hasta tu llegada a meta.</p>
+                <h2 class="text-sm font-bold text-red-700 uppercase tracking-[0.3em] mb-4">Un club abierto en un entorno único</h2>
+                <h3 class="text-4xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">Forma parte de nuestra<br>comunidad en Getxo.</h3>
+                <p class="text-xl text-gray-500 max-w-2xl mx-auto">En Getxo encontrarás tu equipo, más allá de un deporte individual. Ven a disfrutar de la pasión por el triatlón con nosotros.</p>
             </div>
         </div>
 
         <!-- Sección de Formulario y Beneficios (Grid Inspirado en Nicepage) -->
         <div class="container mx-auto px-4 -mt-12">
+            <!-- Aviso de Plazas Limitadas -->
+            <div class="mb-8 bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl shadow-sm">
+                <div class="flex items-center mb-2">
+                    <span class="text-2xl mr-3">📢</span>
+                    <h4 class="text-lg font-bold text-amber-900">Información sobre nuevas altas</h4>
+                </div>
+                <p class="text-amber-800 leading-relaxed">
+                    Debido al alto número de miembros, las nuevas solicitudes entrarán en un <strong>periodo de prueba (septiembre-noviembre)</strong>. La disponibilidad de plazas definitivas para la próxima temporada se confirmará en <strong>diciembre</strong>.
+                </p>
+            </div>
+
             <div class="grid lg:grid-cols-3 gap-8">
                 <!-- Columna de Beneficios (Estilo Nicepage Cards) -->
                 <div class="lg:col-span-2 grid md:grid-cols-2 gap-6">
                     <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition">
                         <div class="text-3xl mb-4 text-red-800">🎯</div>
                         <h4 class="text-xl font-bold mb-3">Planes a medida</h4>
-                        <p class="text-gray-500 leading-relaxed">Entrenamientos adaptados a tu nivel, desde debutantes hasta expertos en Ironman.</p>
+                        <p class="text-gray-500 leading-relaxed">Entrenamientos agupados por niveles, desde debutantes hasta expertos en Ironman.</p>
                     </div>
                     <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition">
                         <div class="text-3xl mb-4 text-red-800">🤝</div>
@@ -52,13 +70,13 @@
                     </div>
                     <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition">
                         <div class="text-3xl mb-4 text-red-800">🏊‍♂️</div>
-                        <h4 class="text-xl font-bold mb-3">Técnica Profesional</h4>
-                        <p class="text-gray-500 leading-relaxed">Correcciones en video y sesiones dirigidas por entrenadores titulados.</p>
+                        <h4 class="text-xl font-bold mb-3">Planificación y práctica</h4>
+                        <p class="text-gray-500 leading-relaxed">Entrenamientos programados por Joanes Goitisolo y presenciales supervisados por los Capitanes de cada Especialidad.</p>
                     </div>
                     <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition">
                         <div class="text-3xl mb-4 text-red-800">🏟️</div>
                         <h4 class="text-xl font-bold mb-3">Instalaciones</h4>
-                        <p class="text-gray-500 leading-relaxed">Acceso a las mejores piscinas y pistas de entrenamiento de Getxo.</p>
+                        <p class="text-gray-500 leading-relaxed">Piscina, pista de atletismo y velódromo cedidos por Getxo Kirolak en el polideportivo de Fadura.</p>
                     </div>
                 </div>
 

@@ -12,6 +12,7 @@ Sitio web oficial del club de triatlón de Getxo. Este proyecto busca centraliza
 - [x] Secciones de natación, ciclismo y carrera a pie.
 - [x] Tabla de horarios semanales.
 - [x] Galería de imágenes optimizada con Lazy Loading.
+- [x] Página de registro/contacto con diseño profesional.
 
 ## 🛠️ Instalación y uso local
 1. Clona el repositorio:

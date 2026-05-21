@@ -7,6 +7,13 @@
     <!-- Color de la barra de direcciones en móviles -->
     <meta name="theme-color" content="#7f1d1d">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-family: 'Bauhaus 93';
+            src: local('Bauhaus 93'), local('Bauhaus93');
+        }
+        .font-bauhaus { font-family: 'Bauhaus 93', 'Arial Rounded MT Bold', sans-serif; }
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
 
@@ -15,7 +22,7 @@
         <div class="container mx-auto flex justify-between items-center">
             <a href="index.html" class="flex items-center space-x-3 hover:opacity-90 transition">
                 <img src="images/logo.png" alt="Logo Getxo Triatloi Taldea" class="h-12 w-auto bg-white rounded-full p-1">
-                <h1 class="text-xl md:text-2xl font-bold tracking-tighter">GETXO<span class="text-gray-300">TRI</span></h1>
+                <h1 class="text-xl md:text-3xl font-bauhaus tracking-wide">GETXO<span class="text-gray-300">TRI</span></h1>
             </a>
             <ul class="flex space-x-6">
                 <li><a href="#entrenamientos" class="hover:text-gray-300 transition">Entrenamientos</a></li>
@@ -29,8 +36,8 @@
     <header class="relative h-[60vh] flex items-center justify-center text-white">
         <img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&q=80&w=1600" alt="Triatletas compitiendo" class="absolute inset-0 w-full h-full object-cover brightness-50" fetchpriority="high">
         <div class="relative text-center px-4">
-            <h2 class="text-5xl md:text-7xl font-extrabold mb-4">NADA. PEDALEA. CORRE.</h2>
-            <p class="text-xl md:text-2xl mb-8">Únete a la comunidad de triatlón de Getxo.</p>
+            <h2 class="text-5xl md:text-7xl font-extrabold mb-4 uppercase">Triatlón en Getxo</h2>
+            <p class="text-xl md:text-2xl mb-8">Entrena con nosotros en Gexto y su entorno</p>
             <a href="unete.html" class="bg-red-900 text-white px-8 py-3 rounded-full text-lg font-bold hover:bg-red-800 transition border-2 border-white">Saber más</a>
         </div>
     </header>
@@ -39,24 +46,24 @@
     <section id="disciplinas" class="py-16 container mx-auto px-4">
         <div class="grid md:grid-cols-3 gap-8">
             <div class="bg-white rounded-lg shadow-md border-t-4 border-red-900 overflow-hidden text-center">
-                <img src="https://images.unsplash.com/photo-1519073173562-b1d556858e8b?auto=format&fit=crop&q=80&w=600" alt="Nadador en piscina" class="w-full h-48 object-cover" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1512413316925-fd4b93f31521?auto=format&fit=crop&q=80&w=600" alt="Nadador en piscina" class="w-full h-48 object-cover" loading="lazy">
                 <div class="p-6">
                     <h3 class="text-2xl font-bold mb-2">Natación</h3>
-                    <p class="text-gray-600">Sesiones en piscina técnica y aguas abiertas todos los martes y jueves.</p>
+                    <p class="text-gray-600">Técnica en Fadura o travesías en playa todos los lunes, miércoles y viernes.</p>
                 </div>
             </div>
             <div class="bg-white rounded-lg shadow-md border-t-4 border-red-700 overflow-hidden text-center">
-                <img src="https://images.unsplash.com/photo-1541625602330-2277a1cd43a7?auto=format&fit=crop&q=80&w=600" alt="Ciclista de carretera" class="w-full h-48 object-cover" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1444491741275-3747c53c99b4?auto=format&fit=crop&q=80&w=600" alt="Ciclista de carretera" class="w-full h-48 object-cover" loading="lazy">
                 <div class="p-6">
                     <h3 class="text-2xl font-bold mb-2">Ciclismo</h3>
-                    <p class="text-gray-600">Rutas grupales de fondo los fines de semana y series de potencia.</p>
+                    <p class="text-gray-600">Velódromo los jueves y rutas grupales de fondo los fines de semana.</p>
                 </div>
             </div>
             <div class="bg-white rounded-lg shadow-md border-t-4 border-red-900 overflow-hidden text-center">
                 <img src="https://images.unsplash.com/photo-1474546652694-a33dd8161d66?auto=format&fit=crop&q=80&w=600" alt="Corredor en pista" class="w-full h-48 object-cover" loading="lazy">
                 <div class="p-6">
                     <h3 class="text-2xl font-bold mb-2">Carrera</h3>
-                    <p class="text-gray-600">Entrenamientos de técnica, series y carrera continua en pista y montaña.</p>
+                    <p class="text-gray-600">Entrenamientos de técnica, series y carrera continua en pista de Fadura y alrededores.</p>
                 </div>
             </div>
         </div>
@@ -69,7 +76,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <!-- Imagen 1 -->
                 <div class="relative group overflow-hidden rounded-lg shadow-lg">
-                    <img src="https://images.unsplash.com/photo-1460390885630-f43407982442?auto=format&fit=crop&q=80&w=800" alt="Triatletas nadando" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1595123550441-d377e017de6a?auto=format&fit=crop&q=80&w=800" alt="Triatletas nadando" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300" loading="lazy">
                     <div class="absolute inset-0 bg-red-900 bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <p class="text-white text-lg font-semibold">Natación en aguas abiertas</p>
                     </div>
@@ -91,7 +98,7 @@
                 <!-- Puedes añadir más imágenes aquí siguiendo el mismo patrón -->
                 <!-- Por ejemplo, una cuarta imagen para completar la fila en pantallas grandes -->
                 <div class="relative group overflow-hidden rounded-lg shadow-lg hidden lg:block">
-                    <img src="https://images.unsplash.com/photo-1520633857323-952402928543?auto=format&fit=crop&q=80&w=800" alt="Transición en triatlón" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300" loading="lazy">
+                    <img src="https://images.unsplash.com/photo-1501869150797-9bbb64f782fd?auto=format&fit=crop&q=80&w=800" alt="Transición en triatlón" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300" loading="lazy">
                     <div class="absolute inset-0 bg-red-900 bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <p class="text-white text-lg font-semibold">Zona de transición</p>
                     </div>
@@ -117,11 +124,11 @@
                     </thead>
                     <tbody class="text-center">
                         <tr>
-                            <td class="p-4 border-b italic text-gray-400">Descanso</td>
                             <td class="p-4 border-b">Natación (7:00)</td>
-                            <td class="p-4 border-b">Carrera (19:00)</td>
+                            <td class="p-4 border-b">Atletismo (19:00)</td>
                             <td class="p-4 border-b">Natación (7:00)</td>
-                            <td class="p-4 border-b">Core/Fuerza</td>
+                            <td class="p-4 border-b">Ciclismo (19:00)</td>
+                            <td class="p-4 border-b">Natación (7:00)</td>
                         </tr>
                     </tbody>
                 </table>
