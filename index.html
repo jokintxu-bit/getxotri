@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getxo Triatloi Taldea - Supera tus límites</title>
+    <meta name="description" content="Sitio oficial de Getxo Triatloi Taldea. Entrenamientos de natación, ciclismo y carrera en Fadura y el entorno de Getxo.">
+    <link rel="alternate" hreflang="es" href="https://getxotri.com/index.html" />
+    <link rel="alternate" hreflang="eu" href="https://getxotri.com/eu/index.html" />
+    <link rel="alternate" hreflang="en" href="https://getxotri.com/en/index.html" />
+    <!-- Color de la barra de direcciones en móviles -->
+    <meta name="theme-color" content="#7f1d1d">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-family: 'Bauhaus 93';
+            src: local('Bauhaus 93'), local('Bauhaus93');
+        }
+        .font-bauhaus { font-family: 'Bauhaus 93', 'Arial Rounded MT Bold', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <!-- Navbar -->
+    <nav aria-label="Navegación principal" class="bg-red-900 text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3 hover:opacity-90 transition">
+                <img src="images/logo.png" alt="Logo Getxo Triatloi Taldea" class="h-12 w-auto bg-white rounded-full p-1">
+                <h1 class="text-xl md:text-3xl font-bauhaus tracking-wide">GETXO<span class="text-gray-300">TRI</span></h1>
+            </a>
+            
+            <!-- Botón Hamburguesa (Móvil) -->
+            <button id="menu-btn" class="block md:hidden focus:outline-none" aria-label="Abrir menú">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <!-- Menú Escritorio -->
+            <ul class="hidden md:flex space-x-6 items-center">
+                <li><a href="#entrenamientos" class="hover:text-gray-300 transition">Entrenamientos</a></li>
+                <li><a href="#calendario" class="hover:text-gray-300 transition">Calendario</a></li>
+                <li><a href="https://getxotri.com" target="_blank" class="hover:text-gray-300 transition font-semibold text-red-200">Getxotri Memorial</a></li>
+                <li><a href="unete.html" class="bg-white text-red-900 px-4 py-2 rounded-lg font-bold hover:bg-red-50 transition-all shadow-md active:scale-95">¡Únete!</a></li>
+                <li class="border-l border-red-700 pl-4 flex space-x-2 text-sm items-center">
+                    <a href="index.html" class="font-bold border-b-2 border-white">ES</a>
+                    <span class="text-red-400">|</span>
+                    <a href="eu/index.html" class="hover:text-gray-300 transition">EU</a>
+                    <span class="text-red-400">|</span>
+                    <a href="en/index.html" class="hover:text-gray-300 transition">EN</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Menú Móvil -->
+        <div id="mobile-menu" class="hidden md:hidden bg-red-800 absolute top-full left-0 w-full p-6 shadow-xl flex flex-col space-y-4">
+            <a href="#entrenamientos" class="hover:text-gray-300 transition text-lg py-2 border-b border-red-700">Entrenamientos</a>
+            <a href="#calendario" class="hover:text-gray-300 transition text-lg py-2 border-b border-red-700">Calendario</a>
+            <a href="https://getxotri.com" target="_blank" class="hover:text-gray-300 transition text-lg py-2 border-b border-red-700">Getxotri Memorial</a>
+            <a href="unete.html" class="bg-white text-red-900 px-6 py-3 rounded-xl font-bold text-center">¡Únete!</a>
+            <div class="flex space-x-4 pt-4 justify-center">
+                <a href="index.html" class="font-bold border-b-2 border-white text-sm">ES</a>
+                <span class="text-red-400 text-sm">|</span>
+                <a href="eu/index.html" class="hover:text-gray-300 transition text-sm">EU</a>
+                <span class="text-red-400 text-sm">|</span>
+                <a href="en/index.html" class="hover:text-gray-300 transition text-sm">EN</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-[60vh] flex items-center justify-center text-white">
+        <img src="images/zornotza.webp" alt="Triatletas compitiendo" class="absolute inset-0 w-full h-full object-cover brightness-50" fetchpriority="high">
+        <div class="relative text-center px-4">
+            <h2 class="text-5xl md:text-7xl font-extrabold mb-4 uppercase font-bauhaus tracking-wide">Getxo Triatloi Taldea</h2>
+            <p class="text-xl md:text-2xl mb-8">Entrena con nosotros en Getxo y su entorno</p>
+            <div class="flex justify-center">
+                <a href="unete.html" class="bg-red-900 text-white px-8 py-3 rounded-full text-lg font-bold hover:bg-red-800 transition border-2 border-white shadow-lg">Únete al Club</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Destacada del Evento -->
+    <section id="evento-principal" class="py-12 bg-red-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center bg-white rounded-3xl overflow-hidden shadow-2xl border border-red-100">
+                <div class="md:w-1/2 h-64 md:h-auto overflow-hidden">
+                    <img src="images/getxotri_memorial_camisetas.webp" alt="Getxotri Memorial Agustín Ugarte" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="md:w-1/2 p-8 md:p-12">
+                    <span class="text-red-700 font-bold uppercase tracking-widest text-sm">Organizamos</span>
+                    <h2 class="text-3xl md:text-4xl font-black text-gray-900 mt-2 mb-4">Getxotri Memorial Agustín Ugarte</h2>
+                    <p class="text-gray-600 mb-8 text-lg leading-relaxed">No te pierdas nuestra prueba reina. Toda la información sobre inscripciones, recorridos y clasificaciones en la web oficial.</p>
+                    <a href="https://getxotri.com" target="_blank" rel="noopener noreferrer" class="inline-block bg-red-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-red-800 transition transform hover:-translate-y-1 shadow-lg">Ir a la Web del Memorial</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disciplinas -->
+    <section id="disciplinas" class="py-16 container mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md border-t-4 border-red-900 overflow-hidden text-center">
+                <img src="images/bahia.webp" alt="Natación en la bahía de Getxo" class="w-full h-48 object-cover hover:scale-105 transition duration-500" loading="lazy">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">Natación</h3>
+                    <p class="text-gray-600">Técnica en Fadura o travesías en playa todos los lunes, miércoles y viernes.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md border-t-4 border-red-700 overflow-hidden text-center relative group">
+                <div class="relative overflow-hidden">
+                    <img src="images/bici_rugby.webp" alt="Ciclista de carretera" class="w-full h-48 object-cover hover:scale-105 transition duration-500" loading="lazy">
+                    <span class="absolute bottom-2 right-2 bg-black/50 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Foto: Iñigo Larreina</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">Ciclismo</h3>
+                    <p class="text-gray-600">Velódromo los jueves y rutas grupales de fondo los fines de semana.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md border-t-4 border-red-900 overflow-hidden text-center relative group">
+                <div class="relative overflow-hidden">
+                    <img src="images/carrera_grada.webp" alt="Corredor en pista" class="w-full h-48 object-cover hover:scale-105 transition duration-500" loading="lazy">
+                    <span class="absolute bottom-2 right-2 bg-black/50 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Foto: Iñigo Larreina</span>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">Carrera</h3>
+                    <p class="text-gray-600">Entrenamientos de técnica, series y carrera continua en pista de Fadura y alrededores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Fotos -->
+    <section id="galeria" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-10">Síguenos en Instagram</h3>
+            
+            <!-- Contenedor para el Widget de Instagram -->
+            <div class="rounded-3xl overflow-hidden shadow-2xl bg-gray-50 border border-gray-100 min-h-[400px]">
+                <!-- LightWidget WIDGET -->
+                <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+                <iframe src="https://cdn.lightwidget.com/widgets/108ffd9be48d5f33b7d067679403ae4c.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+            </div>
+            <div class="text-center mt-6">
+                <a href="https://www.instagram.com/getxotri/" target="_blank" rel="noopener" class="inline-flex items-center text-red-900 font-bold hover:text-red-700 transition">
+                    <span>Ver más fotos en @getxotri</span>
+                    <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horarios Simples -->
+    <section id="entrenamientos" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-10">Horario Semanal</h3>
+            <div class="overflow-x-auto">
+                <table class="w-full bg-white rounded-lg shadow overflow-hidden">
+                    <thead class="bg-red-900 text-white">
+                        <tr>
+                            <th class="p-4">Lunes</th>
+                            <th class="p-4">Martes</th>
+                            <th class="p-4">Miércoles</th>
+                            <th class="p-4">Jueves</th>
+                            <th class="p-4">Viernes</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center">
+                        <tr>
+                            <td class="p-4 border-b">Natación (7:00)</td>
+                            <td class="p-4 border-b">Atletismo (19:00)</td>
+                            <td class="p-4 border-b">Natación (7:00)</td>
+                            <td class="p-4 border-b">Ciclismo (19:00)</td>
+                            <td class="p-4 border-b">Natación (7:00)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendario -->
+    <section id="calendario" class="py-16 bg-white" data-section="calendar">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-10">Próximas Citas</h3>
+            <div id="calendar-container" class="max-w-3xl mx-auto space-y-4">
+                <!-- Evento 1 -->
+                <div class="calendar-card flex items-center p-4 bg-gray-50 rounded-2xl border-l-4 border-red-900 shadow-sm hover:shadow-md transition" data-event-id="1">
+                    <div class="text-center pr-6 border-r border-gray-200 min-w-[80px]">
+                        <span class="block text-2xl font-black text-red-900 leading-none">06</span>
+                        <span class="text-xs uppercase font-bold text-gray-500">JUN</span>
+                    </div>
+                    <div class="pl-6">
+                        <h4 class="font-bold text-lg text-gray-900">VI HALF GASTEIZ 2026</h4>
+                        <p class="text-sm text-gray-600">Distancia Half. Una de las citas de media distancia más esperadas en el calendario vasco.</p>
+                    </div>
+                </div>
+
+                <!-- Evento 2 -->
+                <div class="flex items-center p-4 bg-gray-50 rounded-2xl border-l-4 border-red-700 shadow-sm hover:shadow-md transition">
+                    <div class="text-center pr-6 border-r border-gray-200 min-w-[80px]">
+                        <span class="block text-2xl font-black text-red-700 leading-none">13</span>
+                        <span class="text-xs uppercase font-bold text-gray-500">JUN</span>
+                    </div>
+                    <div class="pl-6">
+                        <h4 class="font-bold text-lg text-gray-900">Tradeinn Triatlón de Zarautz</h4>
+                        <p class="text-sm text-gray-600">Distancia MD. El triatlón con más solera y prestigio, una cita ineludible.</p>
+                    </div>
+                </div>
+
+                <!-- Evento 3 -->
+                <div class="flex items-center p-4 bg-gray-50 rounded-2xl border-l-4 border-red-700 shadow-sm hover:shadow-md transition">
+                    <div class="text-center pr-6 border-r border-gray-200 min-w-[80px]">
+                        <span class="block text-2xl font-black text-red-700 leading-none">20</span>
+                        <span class="text-xs uppercase font-bold text-gray-500">JUN</span>
+                    </div>
+                    <div class="pl-6">
+                        <h4 class="font-bold text-lg text-gray-900">XXXIII Triatlón de Lekeitio</h4>
+                        <p class="text-sm text-gray-600">Distancia Sprint. Incluye también categorías cadete en un entorno espectacular.</p>
+                    </div>
+                </div>
+
+                <!-- Evento 4 -->
+                <div class="flex items-center p-4 bg-gray-50 rounded-2xl border-l-4 border-red-900 shadow-sm hover:shadow-md transition">
+                    <div class="text-center pr-6 border-r border-gray-200 min-w-[80px]">
+                        <span class="block text-2xl font-black text-red-900 leading-none">27</span>
+                        <span class="text-xs uppercase font-bold text-gray-500">JUN</span>
+                    </div>
+                    <div class="pl-6">
+                        <h4 class="font-bold text-lg text-gray-900">Triatlón Femenino</h4>
+                        <p class="text-sm text-gray-600">San Sebastián. Impulsando la participación de la mujer en nuestro deporte.</p>
+                    </div>
+                </div>
+
+                <!-- Evento 5 -->
+                <div class="flex items-center p-4 bg-gray-50 rounded-2xl border-l-4 border-red-700 shadow-sm hover:shadow-md transition">
+                    <div class="text-center pr-6 border-r border-gray-200 min-w-[80px]">
+                        <span class="block text-2xl font-black text-red-700 leading-none">28</span>
+                        <span class="text-xs uppercase font-bold text-gray-500">JUN</span>
+                    </div>
+                    <div class="pl-6">
+                        <h4 class="font-bold text-lg text-gray-900">XXXV Triatlón de Donostia</h4>
+                        <p class="text-sm text-gray-600">"En memoria de Onditz". Una de las pruebas con más historia en la Playa de la Concha.</p>
+                    </div>
+                </div>
+
+                <!-- Evento 6 -->
+                <div class="flex items-center p-4 bg-gray-50 rounded-2xl border-l-4 border-red-900 shadow-sm hover:shadow-md transition">
+                    <div class="text-center pr-6 border-r border-gray-200 min-w-[80px]">
+                        <span class="block text-2xl font-black text-red-900 leading-none">04</span>
+                        <span class="text-xs uppercase font-bold text-gray-500">JUL</span>
+                    </div>
+                    <div class="pl-6">
+                        <h4 class="font-bold text-lg text-gray-900">V Trilegutio</h4>
+                        <p class="text-sm text-gray-600">Triatlón en el entorno del embalse de Ullibarri-Gamboa, una cita clásica del triatlón alavés.</p>
+                    </div>
+                </div>
+
+                <!-- Evento 7 -->
+                <div class="flex items-center p-4 bg-gray-50 rounded-2xl border-l-4 border-red-700 shadow-sm hover:shadow-md transition">
+                    <div class="text-center pr-6 border-r border-gray-200 min-w-[80px]">
+                        <span class="block text-2xl font-black text-red-700 leading-none">11</span>
+                        <span class="text-xs uppercase font-bold text-gray-500">JUL</span>
+                    </div>
+                    <div class="pl-6">
+                        <h4 class="font-bold text-lg text-gray-900">Duatlón Cros de Izarra</h4>
+                        <p class="text-sm text-gray-600">Prueba de duatlón de montaña en Izarra. Una disciplina exigente para los amantes del BTT.</p>
+                    </div>
+                </div>
+
+                <!-- Evento 8 -->
+                <div class="flex items-center p-4 bg-gray-50 rounded-2xl border-l-4 border-red-900 shadow-sm hover:shadow-md transition">
+                    <div class="text-center pr-6 border-r border-gray-200 min-w-[80px]">
+                        <span class="block text-2xl font-black text-red-900 leading-none">12</span>
+                        <span class="text-xs uppercase font-bold text-gray-500">JUL</span>
+                    </div>
+                    <div class="pl-6">
+                        <h4 class="font-bold text-lg text-gray-900">I Acuatlón de Donostia</h4>
+                        <p class="text-sm text-gray-600">Memorial Paco Royo. Nueva e ilusionante cita en el calendario que combina natación y carrera a pie.</p>
+                    </div>
+                </div>
+
+                <!-- Evento 9 -->
+                <div class="flex items-center p-4 bg-gray-50 rounded-2xl border-l-4 border-red-700 shadow-sm hover:shadow-md transition">
+                    <div class="text-center pr-6 border-r border-gray-200 min-w-[80px]">
+                        <span class="block text-2xl font-black text-red-700 leading-none">05</span>
+                        <span class="text-xs uppercase font-bold text-gray-500">SEP</span>
+                    </div>
+                    <div class="pl-6">
+                        <h4 class="font-bold text-lg text-gray-900">Triatlón Popular de Sestao</h4>
+                        <p class="text-sm text-gray-600">Una prueba ideal para disfrutar del ambiente festivo en la ría.</p>
+                    </div>
+                </div>
+
+                <!-- Evento 10 -->
+                <div class="flex items-center p-4 bg-gray-50 rounded-2xl border-l-4 border-red-900 shadow-sm hover:shadow-md transition">
+                    <div class="text-center pr-6 border-r border-gray-200 min-w-[80px]">
+                        <span class="block text-2xl font-black text-red-900 leading-none">06</span>
+                        <span class="text-xs uppercase font-bold text-gray-500">SEP</span>
+                    </div>
+                    <div class="pl-6">
+                        <h4 class="font-bold text-lg text-gray-900">XII Triatlón de Sestao</h4>
+                        <p class="text-sm text-gray-600">Cita federada que incluye categorías cadete. Competencia de alto nivel.</p>
+                    </div>
+                </div>
+
+                <!-- Evento 11 -->
+                <div class="flex items-center p-4 bg-gray-50 rounded-2xl border-l-4 border-red-700 shadow-sm hover:shadow-md transition">
+                    <div class="text-center pr-6 border-r border-gray-200 min-w-[80px]">
+                        <span class="block text-2xl font-black text-red-700 leading-none">12</span>
+                        <span class="text-xs uppercase font-bold text-gray-500">SEP</span>
+                    </div>
+                    <div class="pl-6">
+                        <h4 class="font-bold text-lg text-gray-900">XIX Triatlón de Zumaia</h4>
+                        <p class="text-sm text-gray-600">Distancias Sprint y Super Sprint en uno de los entornos más bellos de la costa.</p>
+                    </div>
+                </div>
+
+                <!-- Evento 12 -->
+                <div class="flex items-center p-4 bg-gray-50 rounded-2xl border-l-4 border-red-900 shadow-sm hover:shadow-md transition">
+                    <div class="text-center pr-6 border-r border-gray-200 min-w-[80px]">
+                        <span class="block text-2xl font-black text-red-900 leading-none">19</span>
+                        <span class="text-xs uppercase font-bold text-gray-500">SEP</span>
+                    </div>
+                    <div class="pl-6">
+                        <h4 class="font-bold text-lg text-gray-900">Bilbao Triathlon</h4>
+                        <p class="text-sm text-gray-600">El gran evento de la capital con distancias Half, Estándar y Aquabike.</p>
+                    </div>
+                </div>
+
+                <!-- Evento 13 -->
+                <div class="flex items-center p-4 bg-gray-50 rounded-2xl border-l-4 border-red-700 shadow-sm hover:shadow-md transition">
+                    <div class="text-center pr-6 border-r border-gray-200 min-w-[80px]">
+                        <span class="block text-2xl font-black text-red-700 leading-none">20</span>
+                        <span class="text-xs uppercase font-bold text-gray-500">SEP</span>
+                    </div>
+                    <div class="pl-6">
+                        <h4 class="font-bold text-lg text-gray-900">Biktri Zarautz</h4>
+                        <p class="text-sm text-gray-600">Triatlón popular de parejas mixtas. Compañerismo y deporte en Zarautz.</p>
+                    </div>
+                </div>
+
+                <!-- Evento 14 -->
+                <div class="flex items-center p-4 bg-gray-50 rounded-2xl border-l-4 border-red-900 shadow-sm hover:shadow-md transition">
+                    <div class="text-center pr-6 border-r border-gray-200 min-w-[80px]">
+                        <span class="block text-2xl font-black text-red-900 leading-none">26</span>
+                        <span class="text-xs uppercase font-bold text-gray-500">SEP</span>
+                    </div>
+                    <div class="pl-6">
+                        <h4 class="font-bold text-lg text-gray-900">IX Triatlón de Getxo</h4>
+                        <p class="text-sm text-gray-600">Memorial Agustín Ugarte. La cita más importante para nuestro club en casa.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="https://triatloi.org/es/calendario/" target="_blank" rel="noopener noreferrer" class="inline-block border-2 border-red-900 text-red-900 px-6 py-2 rounded-xl font-bold hover:bg-red-900 hover:text-white transition">Ver calendario completo oficial</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-red-950 text-white py-10 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">&copy; 2026 Getxo Triatloi Taldea. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://www.instagram.com/getxotri/" target="_blank" rel="noopener" class="hover:text-red-400 transition flex items-center gap-1">Instagram</a>
+                <a href="https://www.facebook.com/GetxoTri/" target="_blank" rel="noopener" class="hover:text-red-400 transition flex items-center gap-1">Facebook</a>
+                <a href="https://www.strava.com/clubs/getxo-triatloi-taldea-211470" target="_blank" rel="noopener" class="hover:text-red-400 transition flex items-center gap-1">Strava</a>
+                <a href="https://github.com/howardtxu/getxotri" class="hover:text-red-400 transition flex items-center gap-1" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

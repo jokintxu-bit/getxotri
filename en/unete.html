@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Getxo Triatloi Taldea</title>
+    <meta name="theme-color" content="#7f1d1d">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face { font-family: 'Bauhaus 93'; src: local('Bauhaus 93'); }
+        .font-bauhaus { font-family: 'Bauhaus 93', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+    <nav class="bg-red-900 text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <img src="../images/logo.png" alt="Logo Getxo Triatloi Taldea" class="h-12 w-auto bg-white rounded-full p-1">
+                <h1 class="text-xl md:text-3xl font-bauhaus tracking-wide">GETXO<span class="text-gray-300">TRI</span></h1>
+            </a>
+            <ul class="hidden md:flex space-x-6 items-center">
+                <li><a href="index.html#training" class="hover:text-gray-300 transition">Training</a></li>
+                <li><a href="index.html#calendar" class="hover:text-gray-300 transition">Calendar</a></li>
+                <li class="border-l border-red-700 pl-4 flex space-x-2 text-sm items-center">
+                    <a href="../unete.html" class="hover:text-gray-300 transition">ES</a>
+                    <span class="text-red-400">|</span>
+                    <a href="../eu/unete.html" class="hover:text-gray-300 transition">EU</a>
+                    <span class="text-red-400">|</span>
+                    <a href="unete.html" class="font-bold border-b-2 border-white">EN</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-red-800 absolute top-full left-0 w-full p-6 shadow-xl flex flex-col space-y-4">
+            <a href="index.html#training" class="hover:text-gray-300 transition text-lg py-2 border-b border-red-700">Training</a>
+            <a href="index.html#calendar" class="hover:text-gray-300 transition text-lg py-2 border-b border-red-700">Calendar</a>
+            <a href="unete.html" class="bg-white text-red-900 px-6 py-3 rounded-xl font-bold text-center">Join us!</a>
+            <div class="flex space-x-4 pt-4 justify-center">
+                <a href="../unete.html" class="hover:text-gray-300 transition text-sm">ES</a>
+                <span class="text-red-400 text-sm">|</span>
+                <a href="../eu/unete.html" class="hover:text-gray-300 transition text-sm">EU</a>
+                <span class="text-red-400 text-sm">|</span>
+                <a href="unete.html" class="font-bold border-b-2 border-white text-sm">EN</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pb-20">
+        <div class="bg-white py-20 border-b">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-sm font-bold text-red-700 uppercase tracking-widest mb-4">An open club in a unique setting</h2>
+                <h3 class="text-4xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">Become part of our<br>community in Getxo.</h3>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-4 -mt-12">
+            <div class="mb-8 bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl shadow-sm">
+                <h4 class="text-lg font-bold text-amber-900 mb-2">📢 Important Information for New Members</h4>
+                <p class="text-amber-800 leading-relaxed">
+                    Our resources are finite. To guarantee training quality, we limit membership numbers. Every <strong>September</strong> we evaluate capacity. However, from <strong>September to November</strong>, we open our doors for candidates to trial with us before formal registration.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2 grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                        <h4 class="text-xl font-bold mb-3">Tailored Plans</h4>
+                        <p class="text-gray-500 leading-relaxed">Group training sessions for all levels, from beginners to Ironman experts.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                        <h4 class="text-xl font-bold mb-3">Community</h4>
+                        <p class="text-gray-500 leading-relaxed">Training alone is hard. In a team, the miles fly by.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-10 rounded-3xl shadow-xl border border-gray-100">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Start Now</h3>
+                    <form action="#" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-400 uppercase">Name</label>
+                            <input type="text" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:ring-2 focus:ring-red-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-400 uppercase">Email</label>
+                            <input type="email" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:ring-2 focus:ring-red-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-400 uppercase">Message</label>
+                            <textarea rows="3" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl outline-none focus:ring-2 focus:ring-red-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 bg-red-900 text-white rounded-xl font-bold shadow-lg hover:bg-red-800 transition transform hover:scale-[1.02]">
+                            Send Application
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

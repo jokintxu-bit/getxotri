@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getxo Triatloi Taldea - Gainditu zure mugak</title>
+    <meta name="description" content="Getxo Triatloi Taldearen webgune ofiziala. Igeriketa, txirrindularitza eta lasterketa entrenamenduak Faduran eta Getxo inguruan.">
+    <link rel="alternate" hreflang="es" href="https://getxotri.com/index.html" />
+    <link rel="alternate" hreflang="eu" href="https://getxotri.com/eu/index.html" />
+    <link rel="alternate" hreflang="en" href="https://getxotri.com/en/index.html" />
+    <!-- Color de la barra de direcciones en móviles -->
+    <meta name="theme-color" content="#7f1d1d">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-family: 'Bauhaus 93';
+            src: local('Bauhaus 93'), local('Bauhaus93');
+        }
+        .font-bauhaus { font-family: 'Bauhaus 93', 'Arial Rounded MT Bold', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <!-- Navbar -->
+    <nav aria-label="Nagusia" class="bg-red-900 text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3 hover:opacity-90 transition">
+                <img src="../images/logo.png" alt="Getxo Triatloi Taldearen Logotipoa" class="h-12 w-auto bg-white rounded-full p-1">
+                <h1 class="text-xl md:text-3xl font-bauhaus tracking-wide">GETXO<span class="text-gray-300">TRI</span></h1>
+            </a>
+            
+            <!-- Botón Hamburguesa (Móvil) -->
+            <button id="menu-btn" class="block md:hidden focus:outline-none" aria-label="Menua ireki">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <!-- Menú Escritorio -->
+            <ul class="hidden md:flex space-x-6 items-center">
+                <li><a href="#entrenamenduak" class="hover:text-gray-300 transition">Entrenamenduak</a></li>
+                <li><a href="#egutegia" class="hover:text-gray-300 transition">Egutegia</a></li>
+                <li><a href="https://getxotri.com" target="_blank" class="hover:text-gray-300 transition font-semibold text-red-200">Getxotri Memoriala</a></li>
+                <li><a href="unete.html" class="bg-white text-red-900 px-4 py-2 rounded-lg font-bold hover:bg-red-50 transition-all shadow-md active:scale-95">Batu zaitez!</a></li>
+                <li class="border-l border-red-700 pl-4 flex space-x-2 text-sm items-center">
+                    <a href="../index.html" class="hover:text-gray-300 transition">ES</a>
+                    <span class="text-red-400">|</span>
+                    <a href="index.html" class="font-bold border-b-2 border-white">EU</a>
+                    <span class="text-red-400">|</span>
+                    <a href="../en/index.html" class="hover:text-gray-300 transition">EN</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Menú Móvil -->
+        <div id="mobile-menu" class="hidden md:hidden bg-red-800 absolute top-full left-0 w-full p-6 shadow-xl flex flex-col space-y-4">
+            <a href="#entrenamenduak" class="hover:text-gray-300 transition text-lg py-2 border-b border-red-700">Entrenamenduak</a>
+            <a href="#egutegia" class="hover:text-gray-300 transition text-lg py-2 border-b border-red-700">Egutegia</a>
+            <a href="https://getxotri.com" target="_blank" class="hover:text-gray-300 transition text-lg py-2 border-b border-red-700">Getxotri Memoriala</a>
+            <a href="unete.html" class="bg-white text-red-900 px-6 py-3 rounded-xl font-bold text-center">Batu zaitez!</a>
+            <div class="flex space-x-4 pt-4 justify-center">
+                <a href="../index.html" class="hover:text-gray-300 transition text-sm">ES</a>
+                <span class="text-red-400 text-sm">|</span>
+                <a href="index.html" class="font-bold border-b-2 border-white text-sm">EU</a>
+                <span class="text-red-400 text-sm">|</span>
+                <a href="../en/index.html" class="hover:text-gray-300 transition text-sm">EN</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-[60vh] flex items-center justify-center text-white">
+        <img src="../images/zornotza.webp" alt="Triatletak lehiatzen" class="absolute inset-0 w-full h-full object-cover brightness-50" fetchpriority="high">
+        <div class="relative text-center px-4">
+            <h2 class="text-5xl md:text-7xl font-extrabold mb-4 uppercase font-bauhaus tracking-wide">Getxo Triatloi Taldea</h2>
+            <p class="text-xl md:text-2xl mb-8">Entrenatu gurekin Getxon eta inguruetan</p>
+            <div class="flex justify-center">
+                <a href="unete.html" class="bg-red-900 text-white px-8 py-3 rounded-full text-lg font-bold hover:bg-red-800 transition border-2 border-white shadow-lg">Batu zaitez klubera</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Destacada del Evento -->
+    <section id="evento-principal" class="py-12 bg-red-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center bg-white rounded-3xl overflow-hidden shadow-2xl border border-red-100">
+                <div class="md:w-1/2 h-64 md:h-auto overflow-hidden">
+                    <img src="../images/getxotri_memorial_camisetas.webp" alt="Getxotri Agustín Ugarte Memoriala" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="md:w-1/2 p-8 md:p-12">
+                    <span class="text-red-700 font-bold uppercase tracking-widest text-sm">Antolatzen dugu</span>
+                    <h2 class="text-3xl md:text-4xl font-black text-gray-900 mt-2 mb-4">Getxotri Agustín Ugarte Memoriala</h2>
+                    <p class="text-gray-600 mb-8 text-lg leading-relaxed">Ez galdu gure proba nagusia. Informazio guztia izen-emateei, ibilbideei eta sailkapenei buruz webgune ofizialean.</p>
+                    <a href="https://getxotri.com" target="_blank" rel="noopener noreferrer" class="inline-block bg-red-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-red-800 transition transform hover:-translate-y-1 shadow-lg">Joan Memorialaren webgunera</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disciplinas -->
+    <section id="disciplinas" class="py-16 container mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md border-t-4 border-red-900 overflow-hidden text-center">
+                <img src="../images/bahia.webp" alt="Igeriketa Getxoko badian" class="w-full h-48 object-cover hover:scale-105 transition duration-500" loading="lazy">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">Igeriketa</h3>
+                    <p class="text-gray-600">Teknika Faduran edo zeharkaldiak hondartzan astelehen, asteazken eta ostiralero.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md border-t-4 border-red-700 overflow-hidden text-center relative group">
+                <img src="../images/bici_rugby.webp" alt="Errepideko txirrindularia" class="w-full h-48 object-cover hover:scale-105 transition duration-500" loading="lazy">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">Txirrindularitza</h3>
+                    <p class="text-gray-600">Belodromoa ostegunetan eta taldeko ibilbideak asteburuetan.</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md border-t-4 border-red-900 overflow-hidden text-center relative group">
+                <img src="../images/carrera_grada.webp" alt="Korrikalaria pistan" class="w-full h-48 object-cover hover:scale-105 transition duration-500" loading="lazy">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold mb-2">Lasterketa</h3>
+                    <p class="text-gray-600">Teknika entrenamenduak, serieak eta lasterketa jarraitua Fadurako pistan eta inguruetan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Fotos -->
+    <section id="galeria" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-10">Jarraitu gaitzazu Instagramen</h3>
+            <div class="rounded-3xl overflow-hidden shadow-2xl bg-gray-50 border border-gray-100 min-h-[400px]">
+                <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+                <iframe src="https://cdn.lightwidget.com/widgets/108ffd9be48d5f33b7d067679403ae4c.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+            </div>
+            <div class="text-center mt-6">
+                <a href="https://www.instagram.com/getxotri/" target="_blank" rel="noopener" class="inline-flex items-center text-red-900 font-bold hover:text-red-700 transition">
+                    <span>Ikusi argazki gehiago @getxotri-n</span>
+                    <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horarios -->
+    <section id="entrenamenduak" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-10">Asteko Ordutegia</h3>
+            <div class="overflow-x-auto">
+                <table class="w-full bg-white rounded-lg shadow overflow-hidden">
+                    <thead class="bg-red-900 text-white">
+                        <tr>
+                            <th class="p-4">Astelehena</th>
+                            <th class="p-4">Asteartea</th>
+                            <th class="p-4">Asteazkena</th>
+                            <th class="p-4">Osteguna</th>
+                            <th class="p-4">Ostirala</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center">
+                        <tr>
+                            <td class="p-4 border-b">Igeriketa (7:00)</td>
+                            <td class="p-4 border-b">Atletismoa (19:00)</td>
+                            <td class="p-4 border-b">Igeriketa (7:00)</td>
+                            <td class="p-4 border-b">Txirrindularitza (19:00)</td>
+                            <td class="p-4 border-b">Igeriketa (7:00)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendario -->
+    <section id="egutegia" class="py-16 bg-white" data-section="calendar">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-10">Hurrengo Hitzorduak</h3>
+            <div id="calendar-container" class="max-w-3xl mx-auto space-y-4">
+                <div class="calendar-card flex items-center p-4 bg-gray-50 rounded-2xl border-l-4 border-red-900 shadow-sm" data-event-id="1">
+                    <div class="text-center pr-6 border-r border-gray-200 min-w-[80px]">
+                        <span class="block text-2xl font-black text-red-900 leading-none">06</span>
+                        <span class="text-xs uppercase font-bold text-gray-500">EKA</span>
+                    </div>
+                    <div class="pl-6">
+                        <h4 class="font-bold text-lg text-gray-900">VI HALF GASTEIZ 2026</h4>
+                        <p class="text-sm text-gray-600">Half distantzia. Euskal egutegiko hitzordu garrantzitsuenetako bat.</p>
+                    </div>
+                </div>
+                <div class="flex items-center p-4 bg-gray-50 rounded-2xl border-l-4 border-red-900 shadow-sm">
+                    <div class="text-center pr-6 border-r border-gray-200 min-w-[80px]">
+                        <span class="block text-2xl font-black text-red-900 leading-none">26</span>
+                        <span class="text-xs uppercase font-bold text-gray-500">IRA</span>
+                    </div>
+                    <div class="pl-6">
+                        <h4 class="font-bold text-lg text-gray-900">Getxoko IX. Triatloia</h4>
+                        <p class="text-sm text-gray-600">Agustín Ugarte Memoriala. Gure taldearen probarik bereziena etxean.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="https://triatloi.org/es/calendario/" target="_blank" rel="noopener noreferrer" class="inline-block border-2 border-red-900 text-red-900 px-6 py-2 rounded-xl font-bold hover:bg-red-900 hover:text-white transition">Ikusi egutegi ofizial osoa</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-red-950 text-white py-10 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">&copy; 2026 Getxo Triatloi Taldea. Eskubide guztiak erreserbatuta.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://www.instagram.com/getxotri/" target="_blank" rel="noopener" class="hover:text-red-400 transition">Instagram</a>
+                <a href="https://www.facebook.com/GetxoTri/" target="_blank" rel="noopener" class="hover:text-red-400 transition">Facebook</a>
+                <a href="https://www.strava.com/clubs/getxo-triatloi-taldea-211470" target="_blank" rel="noopener" class="hover:text-red-400 transition">Strava</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    </script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Únete a Getxo Triatloi Taldea</title>
+    <!-- Color de la barra de direcciones en móviles -->
+    <meta name="theme-color" content="#7f1d1d">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-family: 'Bauhaus 93';
+            src: local('Bauhaus 93'), local('Bauhaus93');
+        }
+        .font-bauhaus { font-family: 'Bauhaus 93', 'Arial Rounded MT Bold', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <!-- Navbar -->
+    <nav aria-label="Navegación principal" class="bg-red-900 text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3 hover:opacity-90 transition">
+                <img src="images/logo.png" alt="Logo Getxo Triatloi Taldea" class="h-12 w-auto bg-white rounded-full p-1">
+                <h1 class="text-xl md:text-3xl font-bauhaus tracking-wide">GETXO<span class="text-gray-300">TRI</span></h1>
+            </a>
+            
+            <!-- Botón Hamburguesa (Móvil) -->
+            <button id="menu-btn" class="block md:hidden focus:outline-none" aria-label="Abrir menú">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <!-- Menú Escritorio -->
+            <ul class="hidden md:flex space-x-6 items-center">
+                <li><a href="index.html#entrenamientos" class="hover:text-gray-300 transition">Entrenamientos</a></li>
+                <li><a href="index.html#calendario" class="hover:text-gray-300 transition">Calendario</a></li>
+                <li><a href="https://getxotri.com" target="_blank" class="hover:text-gray-300 transition font-semibold text-red-200">Getxotri Memorial</a></li>
+                <li><a href="unete.html" class="bg-white text-red-900 px-4 py-2 rounded-lg font-bold hover:bg-red-50 transition-all shadow-md active:scale-95">¡Únete!</a></li>
+                <li class="border-l border-red-700 pl-4 flex space-x-2 text-sm items-center">
+                    <a href="unete.html" class="font-bold border-b-2 border-white">ES</a>
+                    <span class="text-red-400">|</span>
+                    <a href="eu/unete.html" class="hover:text-gray-300 transition">EU</a>
+                    <span class="text-red-400">|</span>
+                    <a href="en/unete.html" class="hover:text-gray-300 transition">EN</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Menú Móvil -->
+        <div id="mobile-menu" class="hidden md:hidden bg-red-800 absolute top-full left-0 w-full p-6 shadow-xl flex flex-col space-y-4">
+            <a href="index.html#entrenamientos" class="hover:text-gray-300 transition text-lg py-2 border-b border-red-700">Entrenamientos</a>
+            <a href="index.html#calendario" class="hover:text-gray-300 transition text-lg py-2 border-b border-red-700">Calendario</a>
+            <a href="https://getxotri.com" target="_blank" class="hover:text-gray-300 transition text-lg py-2 border-b border-red-700">Getxotri Memorial</a>
+            <a href="unete.html" class="bg-white text-red-900 px-6 py-3 rounded-xl font-bold text-center">¡Únete!</a>
+            <div class="flex space-x-4 pt-4 justify-center">
+                <a href="unete.html" class="font-bold border-b-2 border-white text-sm">ES</a>
+                <span class="text-red-400 text-sm">|</span>
+                <a href="eu/unete.html" class="hover:text-gray-300 transition text-sm">EU</a>
+                <span class="text-red-400 text-sm">|</span>
+                <a href="en/unete.html" class="hover:text-gray-300 transition text-sm">EN</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="bg-gray-50 pb-20">
+        <!-- Hero de la página -->
+        <div class="bg-white py-20 border-b border-gray-100">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-sm font-bold text-red-700 uppercase tracking-[0.3em] mb-4">Un club abierto en un entorno único</h2>
+                <h3 class="text-4xl md:text-6xl font-black text-gray-900 mb-6 leading-tight">Forma parte de nuestra<br>comunidad en Getxo.</h3>
+                <p class="text-xl text-gray-500 max-w-2xl mx-auto">En Getxo encontrarás tu equipo, más allá de un deporte individual. Ven a disfrutar de la pasión por el triatlón con nosotros.</p>
+            </div>
+        </div>
+
+        <!-- Sección de Formulario y Beneficios (Grid Inspirado en Nicepage) -->
+        <div class="container mx-auto px-4 -mt-12">
+            <!-- Aviso de Plazas Limitadas -->
+            <div class="mb-8 bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl shadow-sm">
+                <div class="flex items-center mb-2">
+                    <span class="text-2xl mr-3">📢</span>
+                    <h4 class="text-lg font-bold text-amber-900">Información sobre nuevas altas</h4>
+                </div>
+                <p class="text-amber-800 leading-relaxed">
+                    Nuestros recursos materiales y humanos son finitos, y para garantizar la calidad de los entrenamientos no podemos superar un número crítico de socios. Por ello, cada <strong>septiembre</strong> evaluamos la capacidad del club y decidimos las plazas de ingreso disponibles. Aun así, entre <strong>septiembre y noviembre</strong> abrimos nuestras puertas a los candidatos para que nos conozcan desde dentro. Así, en caso de querer ingresar y haber plazas, podrás realizar tu solicitud con total conocimiento de nuestra dinámica.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Columna de Beneficios (Estilo Nicepage Cards) -->
+                <div class="lg:col-span-2 grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                        <div class="text-3xl mb-4 text-red-800">🎯</div>
+                        <h4 class="text-xl font-bold mb-3">Planes a medida</h4>
+                        <p class="text-gray-500 leading-relaxed">Entrenamientos agrupados por niveles, desde debutantes hasta expertos en Ironman.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                        <div class="text-3xl mb-4 text-red-800">🤝</div>
+                        <h4 class="text-xl font-bold mb-3">Grupo y Motivación</h4>
+                        <p class="text-gray-500 leading-relaxed">Entrenar solo es difícil. En equipo, los kilómetros pasan volando.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                        <div class="text-3xl mb-4 text-red-800">🏊‍♂️</div>
+                        <h4 class="text-xl font-bold mb-3">Planificación y práctica</h4>
+                        <p class="text-gray-500 leading-relaxed">Entrenamientos programados por Joanes Goitisolo y presenciales supervisados por los Capitanes de cada Especialidad.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                        <div class="text-3xl mb-4 text-red-800">🏟️</div>
+                        <h4 class="text-xl font-bold mb-3">Instalaciones</h4>
+                        <p class="text-gray-500 leading-relaxed">Uso de piscina, pista de atletismo y velódromo cedidos por Getxo Kirolak en el polideportivo de Fadura.</p>
+                    </div>
+                </div>
+
+                <!-- Columna del Formulario (Tarjeta Destacada) -->
+                <div class="bg-white p-10 rounded-3xl shadow-xl border border-gray-100">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Empezar ahora</h3>
+                    <form action="https://formspree.io/f/meewkrrj" method="POST" class="space-y-4">
+                        <!-- Configuración de Formspree -->
+                        <input type="hidden" name="_next" value="index.html">
+                        <input type="hidden" name="_subject" value="Nueva solicitud de alta - Getxo Triatloi Taldea">
+
+                        <div>
+                            <label for="name" class="block text-xs font-bold text-gray-400 uppercase mb-1">Nombre</label>
+                            <input type="text" name="name" id="name" required
+                                   class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 outline-none transition">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-xs font-bold text-gray-400 uppercase mb-1">Email</label>
+                            <input type="email" name="email" id="email" required
+                                   class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 outline-none transition">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-xs font-bold text-gray-400 uppercase mb-1">Teléfono</label>
+                            <input type="tel" name="phone" id="phone"
+                                   class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 outline-none transition">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-xs font-bold text-gray-400 uppercase mb-1">Mensaje</label>
+                            <textarea id="message" name="message" rows="3" required 
+                                      class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 outline-none transition"></textarea>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <input id="privacy-policy" type="checkbox" name="politica_privacidad" required class="mt-1 h-4 w-4 text-red-900 border-gray-300 rounded">
+                            <label for="privacy-policy" class="ml-2 text-xs text-gray-400">
+                                Acepto los términos y la política de privacidad.
+                            </label>
+                        </div>
+                        <button type="submit"
+                                class="w-full py-4 bg-red-900 text-white rounded-xl font-bold shadow-lg hover:bg-red-800 transition transform hover:scale-[1.02]">
+                            Enviar Solicitud
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-red-950 text-white py-10 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">&copy; 2026 Getxo Triatloi Taldea. Todos los derechos reservados.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://www.instagram.com/getxotri/" target="_blank" rel="noopener" class="hover:text-red-400 transition">Instagram</a>
+                <a href="https://www.facebook.com/GetxoTri/" target="_blank" rel="noopener" class="hover:text-red-400 transition">Facebook</a>
+                <a href="https://www.strava.com/clubs/getxo-triatloi-taldea-211470" target="_blank" rel="noopener" class="hover:text-red-400 transition">Strava</a>
+                <a href="https://github.com/howardtxu/getxotri" class="hover:text-red-400 transition" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

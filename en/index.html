@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getxo Triatloi Taldea - Push your limits</title>
+    <meta name="description" content="Official website of Getxo Triathlon Club. Swimming, cycling and running sessions in Fadura and Getxo area.">
+    <link rel="alternate" hreflang="es" href="https://getxotri.com/index.html" />
+    <link rel="alternate" hreflang="eu" href="https://getxotri.com/eu/index.html" />
+    <link rel="alternate" hreflang="en" href="https://getxotri.com/en/index.html" />
+    <meta name="theme-color" content="#7f1d1d">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face { font-family: 'Bauhaus 93'; src: local('Bauhaus 93'), local('Bauhaus93'); }
+        .font-bauhaus { font-family: 'Bauhaus 93', 'Arial Rounded MT Bold', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+    <nav aria-label="Main navigation" class="bg-red-900 text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3 hover:opacity-90 transition">
+                <img src="../images/logo.png" alt="Logo Getxo Triatloi Taldea" class="h-12 w-auto bg-white rounded-full p-1">
+                <h1 class="text-xl md:text-3xl font-bauhaus tracking-wide">GETXO<span class="text-gray-300">TRI</span></h1>
+            </a>
+            
+            <!-- Hamburger Button -->
+            <button id="menu-btn" class="block md:hidden focus:outline-none" aria-label="Open menu">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+
+            <ul class="hidden md:flex space-x-6 items-center">
+                <li><a href="#training" class="hover:text-gray-300 transition">Training</a></li>
+                <li><a href="#calendar" class="hover:text-gray-300 transition">Calendar</a></li>
+                <li><a href="https://getxotri.com" target="_blank" class="hover:text-gray-300 transition font-semibold text-red-200">Memorial Race</a></li>
+                <li><a href="unete.html" class="bg-white text-red-900 px-4 py-2 rounded-lg font-bold hover:bg-red-50 transition-all shadow-md">Join us!</a></li>
+                <li class="border-l border-red-700 pl-4 flex space-x-2 text-sm items-center">
+                    <a href="../index.html" class="hover:text-gray-300 transition">ES</a>
+                    <span class="text-red-400">|</span>
+                    <a href="../eu/index.html" class="hover:text-gray-300 transition">EU</a>
+                    <span class="text-red-400">|</span>
+                    <a href="index.html" class="font-bold border-b-2 border-white">EN</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-red-800 absolute top-full left-0 w-full p-6 shadow-xl flex flex-col space-y-4">
+            <a href="#training" class="hover:text-gray-300 transition text-lg py-2 border-b border-red-700">Training</a>
+            <a href="#calendar" class="hover:text-gray-300 transition text-lg py-2 border-b border-red-700">Calendar</a>
+            <a href="https://getxotri.com" target="_blank" class="hover:text-gray-300 transition text-lg py-2 border-b border-red-700">Memorial Race</a>
+            <a href="unete.html" class="bg-white text-red-900 px-6 py-3 rounded-xl font-bold text-center">Join us!</a>
+            <div class="flex space-x-4 pt-4 justify-center">
+                <a href="../index.html" class="hover:text-gray-300 transition text-sm">ES</a>
+                <span class="text-red-400 text-sm">|</span>
+                <a href="../eu/index.html" class="hover:text-gray-300 transition text-sm">EU</a>
+                <span class="text-red-400 text-sm">|</span>
+                <a href="index.html" class="font-bold border-b-2 border-white text-sm">EN</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative h-[60vh] flex items-center justify-center text-white">
+        <img src="../images/zornotza.webp" alt="Triathletes competing" class="absolute inset-0 w-full h-full object-cover brightness-50">
+        <div class="relative text-center px-4">
+            <h2 class="text-5xl md:text-7xl font-extrabold mb-4 uppercase font-bauhaus tracking-wide">Getxo Triatloi Taldea</h2>
+            <p class="text-xl md:text-2xl mb-8">Train with us in Getxo and surroundings</p>
+            <a href="unete.html" class="bg-red-900 text-white px-8 py-3 rounded-full text-lg font-bold border-2 border-white shadow-lg">Join the Club</a>
+        </div>
+    </header>
+
+    <section class="py-12 bg-red-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row bg-white rounded-3xl overflow-hidden shadow-2xl border border-red-100">
+                <div class="md:w-1/2 overflow-hidden"><img src="../images/getxotri_memorial_camisetas.webp" class="w-full h-full object-cover"></div>
+                <div class="md:w-1/2 p-8 md:p-12">
+                    <span class="text-red-700 font-bold uppercase tracking-widest text-sm">We Organize</span>
+                    <h2 class="text-3xl md:text-4xl font-black text-gray-900 mt-2 mb-4">Getxotri Agustín Ugarte Memorial</h2>
+                    <p class="text-gray-600 mb-8 text-lg">Don't miss our flagship event. All information on registrations, courses and results on the official website.</p>
+                    <a href="https://getxotri.com" target="_blank" class="inline-block bg-red-900 text-white px-8 py-4 rounded-xl font-bold">Official Event Website</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="training" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl font-bold text-center mb-10">Weekly Schedule</h3>
+            <div class="overflow-x-auto">
+                <table class="w-full bg-white rounded-lg shadow">
+                    <thead class="bg-red-900 text-white">
+                        <tr><th class="p-4">Monday</th><th class="p-4">Tuesday</th><th class="p-4">Wednesday</th><th class="p-4">Thursday</th><th class="p-4">Friday</th></tr>
+                    </thead>
+                    <tbody class="text-center">
+                        <tr><td class="p-4 border-b">Swim (7:00)</td><td class="p-4 border-b">Run (19:00)</td><td class="p-4 border-b">Swim (7:00)</td><td class="p-4 border-b">Cycling (19:00)</td><td class="p-4 border-b">Swim (7:00)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="calendar" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl md:text-4xl font-bold text-center mb-10">Upcoming Events</h3>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="flex items-center p-4 bg-gray-50 rounded-2xl border-l-4 border-red-900">
+                    <div class="text-center pr-6 border-r min-w-[80px]"><span class="block text-2xl font-black text-red-900">06</span><span class="text-xs uppercase font-bold text-gray-500">JUN</span></div>
+                    <div class="pl-6"><h4 class="font-bold text-lg">VI HALF GASTEIZ 2026</h4><p class="text-sm text-gray-600">Half distance. A key date in the Basque triathlon calendar.</p></div>
+                </div>
+                <div class="flex items-center p-4 bg-gray-50 rounded-2xl border-l-4 border-red-900">
+                    <div class="text-center pr-6 border-r min-w-[80px]"><span class="block text-2xl font-black text-red-900">26</span><span class="text-xs uppercase font-bold text-gray-500">SEP</span></div>
+                    <div class="pl-6"><h4 class="font-bold text-lg">IX Getxo Triathlon</h4><p class="text-sm text-gray-600">Agustín Ugarte Memorial. Our home race.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-red-950 text-white py-10">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2026 Getxo Triatloi Taldea. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    </script>
+</body>
+</html>
