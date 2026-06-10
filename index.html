@@ -31,7 +31,7 @@
             </a>
             
             <!-- Botón Hamburguesa (Móvil) -->
-            <button id="menu-btn" class="block md:hidden focus:outline-none" aria-label="Abrir menú">
+            <button id="menu-btn" class="block md:hidden focus:outline-none" aria-label="Abrir menú" aria-expanded="false">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
@@ -377,12 +377,14 @@
         const menu = document.getElementById('mobile-menu');
 
         btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
+            const isHidden = menu.classList.toggle('hidden');
+            btn.setAttribute('aria-expanded', !isHidden);
         });
 
         document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 menu.classList.add('hidden');
+                btn.setAttribute('aria-expanded', 'false');
             });
         });
     </script>

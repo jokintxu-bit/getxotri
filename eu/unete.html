@@ -4,26 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batu Getxo Triatloi Taldera</title>
-    <!-- Deploy Check: v1.0.6 -->
+    <meta name="description" content="Izan zaitez Getxo Triatloi Taldeko kide. Alta berriei, entrenamenduei eta bazkide izatearen abantailei buruzko informazioa.">
+    <link rel="alternate" hreflang="es" href="https://getxotri.com/unete.html" />
+    <link rel="alternate" hreflang="eu" href="https://getxotri.com/eu/unete.html" />
+    <link rel="alternate" hreflang="en" href="https://getxotri.com/en/unete.html" />
+    <!-- Deploy Check: v1.0.7 -->
     <meta name="theme-color" content="#7f1d1d">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @font-face { font-family: 'Bauhaus 93'; src: local('Bauhaus 93'); }
-        .font-bauhaus { font-family: 'Bauhaus 93', sans-serif; }
+        @font-face {
+            font-family: 'Bauhaus 93';
+            src: local('Bauhaus 93'), local('Bauhaus93');
+        }
+        .font-bauhaus { font-family: 'Bauhaus 93', 'Arial Rounded MT Bold', sans-serif; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
 
     <!-- Navbar -->
-    <nav class="bg-red-900 text-white p-4 sticky top-0 z-50">
+    <nav aria-label="Nagusia" class="bg-red-900 text-white p-4 sticky top-0 z-50">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="flex items-center space-x-3">
-                <img src="../images/logo.png" alt="Logo" class="h-12 w-auto bg-white rounded-full p-1">
+            <a href="index.html" class="flex items-center space-x-3 hover:opacity-90 transition">
+                <img src="../images/logo.png" alt="Getxo Triatloi Taldearen Logotipoa" class="h-12 w-auto bg-white rounded-full p-1">
                 <h1 class="text-xl md:text-3xl font-bauhaus tracking-wide">GETXO<span class="text-gray-300">TRI</span></h1>
             </a>
 
-            <!-- Botoi Hamburguesa -->
-            <button id="menu-btn" class="block md:hidden focus:outline-none" aria-label="Menua ireki">
+            <!-- Botoi Hamburguesa (Mugikorra) -->
+            <button id="menu-btn" class="block md:hidden focus:outline-none" aria-label="Menua ireki" aria-expanded="false">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
@@ -32,13 +39,14 @@
             <ul class="hidden md:flex space-x-6 items-center">
                 <li><a href="index.html#entrenamenduak" class="hover:text-gray-300 transition">Entrenamenduak</a></li>
                 <li><a href="index.html#egutegia" class="hover:text-gray-300 transition">Egutegia</a></li>
-                <li><a href="unete.html" class="bg-white text-red-900 px-4 py-2 rounded-lg font-bold">Batu zaitez!</a></li>
+                <li><a href="https://getxotri.com" target="_blank" class="hover:text-gray-300 transition font-semibold text-red-200">Getxotri Memoriala</a></li>
+                <li><a href="unete.html" class="bg-white text-red-900 px-4 py-2 rounded-lg font-bold hover:bg-red-50 transition-all shadow-md active:scale-95">Batu zaitez!</a></li>
                 <li class="border-l border-red-700 pl-4 flex space-x-2 text-sm items-center">
-                    <a href="../unete.html" class="hover:text-gray-300 transition">ES</a>
+                    <a href="../index.html" class="hover:text-gray-300 transition">ES</a>
                     <span class="text-red-400">|</span>
-                    <a href="unete.html" class="font-bold border-b-2 border-white">EU</a>
+                    <a href="index.html" class="font-bold border-b-2 border-white">EU</a>
                     <span class="text-red-400">|</span>
-                    <a href="../en/unete.html" class="hover:text-gray-300 transition">EN</a>
+                    <a href="../en/index.html" class="hover:text-gray-300 transition">EN</a>
                 </li>
             </ul>
         </div>
@@ -47,13 +55,14 @@
         <div id="mobile-menu" class="hidden md:hidden bg-red-800 absolute top-full left-0 w-full p-6 shadow-xl flex flex-col space-y-4">
             <a href="index.html#entrenamenduak" class="hover:text-gray-300 transition text-lg py-2 border-b border-red-700">Entrenamenduak</a>
             <a href="index.html#egutegia" class="hover:text-gray-300 transition text-lg py-2 border-b border-red-700">Egutegia</a>
+            <a href="https://getxotri.com" target="_blank" class="hover:text-gray-300 transition text-lg py-2 border-b border-red-700">Getxotri Memoriala</a>
             <a href="unete.html" class="bg-white text-red-900 px-6 py-3 rounded-xl font-bold text-center">Batu zaitez!</a>
             <div class="flex space-x-4 pt-4 justify-center">
-                <a href="../unete.html" class="hover:text-gray-300 transition text-sm">ES</a>
+                <a href="../index.html" class="hover:text-gray-300 transition text-sm">ES</a>
                 <span class="text-red-400 text-sm">|</span>
-                <a href="unete.html" class="font-bold border-b-2 border-white text-sm">EU</a>
+                <a href="index.html" class="font-bold border-b-2 border-white text-sm">EU</a>
                 <span class="text-red-400 text-sm">|</span>
-                <a href="../en/unete.html" class="hover:text-gray-300 transition text-sm">EN</a>
+                <a href="../en/index.html" class="hover:text-gray-300 transition text-sm">EN</a>
             </div>
         </div>
     </nav>
@@ -103,7 +112,10 @@
                 <!-- Formulario -->
                 <div class="bg-white p-10 rounded-3xl shadow-xl border border-gray-100">
                     <h3 class="text-2xl font-bold text-gray-900 mb-6">Hasi orain</h3>
-                    <form action="#" class="space-y-4">
+                    <form action="https://formspree.io/f/meewkrrj" method="POST" class="space-y-4">
+                        <input type="hidden" name="_next" value="index.html">
+                        <input type="hidden" name="_subject" value="Alta eskaera berria - Getxo Triatloi Taldea">
+
                         <div>
                             <label class="block text-xs font-bold text-gray-400 uppercase mb-1">Izena</label>
                             <input type="text" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 outline-none">
@@ -120,6 +132,12 @@
                             <label class="block text-xs font-bold text-gray-400 uppercase mb-1">Mezua</label>
                             <textarea rows="3" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-red-500 outline-none"></textarea>
                         </div>
+                        <div class="flex items-start mb-4">
+                            <input id="privacy-policy" type="checkbox" name="pribatutasun_politika" required class="mt-1 h-4 w-4 text-red-900 border-gray-300 rounded">
+                            <label for="privacy-policy" class="ml-2 text-xs text-gray-400">
+                                Baldintzak eta pribatutasun politika onartzen ditut.
+                            </label>
+                        </div>
                         <button type="submit" class="w-full py-4 bg-red-900 text-white rounded-xl font-bold shadow-lg hover:bg-red-800 transition transform hover:scale-[1.02]">
                             Eskaera bidali
                         </button>
@@ -131,11 +149,12 @@
 
     <footer class="bg-red-950 text-white py-10 mt-16">
         <div class="container mx-auto px-4 text-center">
-            <p class="mb-2">&copy; 2026 Getxo Triatloi Taldea. Eskubide guztiak erreserbatuta. <span class="text-red-800/50 text-xs">v1.0.6</span></p>
+            <p class="mb-2">&copy; 2026 Getxo Triatloi Taldea. Eskubide guztiak erreserbatuta. <span class="text-red-800/50 text-xs">v1.0.7</span></p>
             <div class="flex justify-center space-x-4">
-                <a href="https://www.instagram.com/getxotri/" target="_blank" rel="noopener" class="hover:text-red-400 transition">Instagram</a>
-                <a href="https://www.facebook.com/GetxoTri/" target="_blank" rel="noopener" class="hover:text-red-400 transition">Facebook</a>
-                <a href="https://www.strava.com/clubs/getxo-triatloi-taldea-211470" target="_blank" rel="noopener" class="hover:text-red-400 transition">Strava</a>
+                <a href="https://www.instagram.com/getxotri/" target="_blank" rel="noopener" class="hover:text-red-400 transition flex items-center gap-1">Instagram</a>
+                <a href="https://www.facebook.com/GetxoTri/" target="_blank" rel="noopener" class="hover:text-red-400 transition flex items-center gap-1">Facebook</a>
+                <a href="https://www.strava.com/clubs/getxo-triatloi-taldea-211470" target="_blank" rel="noopener" class="hover:text-red-400 transition flex items-center gap-1">Strava</a>
+                <a href="https://github.com/jokintxu-bit/getxotri" class="hover:text-red-400 transition flex items-center gap-1" target="_blank" rel="noopener">GitHub</a>
             </div>
         </div>
     </footer>
@@ -143,8 +162,17 @@
     <script>
         const btn = document.getElementById('menu-btn');
         const menu = document.getElementById('mobile-menu');
+
         btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
+            const isHidden = menu.classList.toggle('hidden');
+            btn.setAttribute('aria-expanded', !isHidden);
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                btn.setAttribute('aria-expanded', 'false');
+            });
         });
     </script>
 </body>

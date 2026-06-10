@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Únete a Getxo Triatloi Taldea</title>
+    <meta name="description" content="Forma parte de Getxo Triatloi Taldea. Información sobre nuevas altas, entrenamientos y beneficios de ser socio.">
+    <link rel="alternate" hreflang="es" href="https://getxotri.com/unete.html" />
+    <link rel="alternate" hreflang="eu" href="https://getxotri.com/eu/unete.html" />
+    <link rel="alternate" hreflang="en" href="https://getxotri.com/en/unete.html" />
     <!-- Color de la barra de direcciones en móviles -->
     <!-- Deploy Check: v1.0.7 -->
     <meta name="theme-color" content="#7f1d1d">
@@ -27,7 +31,7 @@
             </a>
             
             <!-- Botón Hamburguesa (Móvil) -->
-            <button id="menu-btn" class="block md:hidden focus:outline-none" aria-label="Abrir menú">
+            <button id="menu-btn" class="block md:hidden focus:outline-none" aria-label="Abrir menú" aria-expanded="false">
                 <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
@@ -175,12 +179,14 @@
         const menu = document.getElementById('mobile-menu');
 
         btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
+            const isHidden = menu.classList.toggle('hidden');
+            btn.setAttribute('aria-expanded', !isHidden);
         });
 
         document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 menu.classList.add('hidden');
+                btn.setAttribute('aria-expanded', 'false');
             });
         });
     </script>
