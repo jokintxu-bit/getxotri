@@ -7,6 +7,9 @@ on:
       - master
   workflow_dispatch: # Permite ejecución manual para pruebas
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -21,6 +24,4 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          # Hostalia suele usar la raíz o una carpeta llamada /html o /public_html.
-          # Si ves que los archivos no aparecen en tu web, cambia './' por 'html' o 'public_html'
-          server-dir: ./ 
+          server-dir: ./html/
