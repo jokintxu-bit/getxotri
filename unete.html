@@ -132,6 +132,225 @@
                 </div>
             </div>
 
+            <!-- Sección: Guía de Bienvenida y Esencia del Club (Gu Gara Getxotri) -->
+            <div class="mb-12 bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100">
+                <div class="flex flex-col md:flex-row md:items-center justify-between pb-6 mb-8 border-b border-gray-100 gap-4">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-red-700 bg-red-50 px-3 py-1 rounded-full border border-red-100">Documento Oficial de la Junta</span>
+                        <h4 class="text-3xl font-black text-gray-900 mt-2">Guía de Bienvenida: Conoce Getxotri</h4>
+                        <p class="text-gray-500 text-sm mt-1">Cómo funciona el club, qué ofrece y qué significa formar parte de nuestro equipo.</p>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-xs font-bold text-gray-400 tracking-wider">GU GARA GETXOTRI</span>
+                    </div>
+                </div>
+
+                <!-- Navegación por pestañas de los 4 Bloques -->
+                <div class="flex flex-wrap gap-2 mb-8 bg-gray-100 p-1.5 rounded-2xl" role="tablist">
+                    <button onclick="switchTab('block-1')" id="tab-block-1" class="guide-tab-btn flex-1 min-w-[140px] py-3 px-4 rounded-xl text-sm font-bold transition-all text-center bg-white text-red-900 shadow-sm" role="tab" aria-selected="true">
+                        01. El Club
+                    </button>
+                    <button onclick="switchTab('block-2')" id="tab-block-2" class="guide-tab-btn flex-1 min-w-[140px] py-3 px-4 rounded-xl text-sm font-bold transition-all text-center text-gray-600 hover:text-gray-900" role="tab" aria-selected="false">
+                        02. Entrenamientos
+                    </button>
+                    <button onclick="switchTab('block-3')" id="tab-block-3" class="guide-tab-btn flex-1 min-w-[140px] py-3 px-4 rounded-xl text-sm font-bold transition-all text-center text-gray-600 hover:text-gray-900" role="tab" aria-selected="false">
+                        03. Finanzas
+                    </button>
+                    <button onclick="switchTab('block-4')" id="tab-block-4" class="guide-tab-btn flex-1 min-w-[140px] py-3 px-4 rounded-xl text-sm font-bold transition-all text-center text-gray-600 hover:text-gray-900" role="tab" aria-selected="false">
+                        04. El Memorial
+                    </button>
+                </div>
+
+                <!-- Contenido de las pestañas -->
+                <div id="guide-tab-content">
+                    <!-- BLOQUE 01: El Club y su Funcionamiento -->
+                    <div id="block-1" class="guide-tab-pane space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-red-50/50 p-6 rounded-2xl border border-red-100">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-red-700 mb-2">Quiénes Somos</h5>
+                                <h6 class="text-xl font-bold text-gray-900 mb-3">Un club para vivir el triatlón de muchas maneras</h6>
+                                <p class="text-sm text-gray-600 leading-relaxed mb-4">El objetivo principal es fomentar y facilitar la práctica del triatlón. Estamos abiertos a distintas experiencias, edades deportivas, niveles y objetivos: desde quien se inicia hasta quien compite en alta exigencia.</p>
+                                <div class="flex flex-wrap gap-2 text-xs font-semibold text-red-900">
+                                    <span class="bg-white px-3 py-1 rounded-lg border border-red-100">Sprint</span>
+                                    <span class="bg-white px-3 py-1 rounded-lg border border-red-100">Media Distancia</span>
+                                    <span class="bg-white px-3 py-1 rounded-lg border border-red-100">Larga Distancia</span>
+                                    <span class="bg-white px-3 py-1 rounded-lg border border-red-100">Duatlón</span>
+                                    <span class="bg-white px-3 py-1 rounded-lg border border-red-100">Equipos</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Principio Central</h5>
+                                <h6 class="text-xl font-bold text-gray-900 mb-3">Libertad deportiva, compromiso colectivo</h6>
+                                <div class="space-y-3 text-sm text-gray-600">
+                                    <p><strong>Libertad deportiva:</strong> Cada persona decide cómo entrena, cuánto compite, qué distancias practica y cuáles son sus objetivos.</p>
+                                    <p><strong>Compromiso colectivo:</strong> La libertad individual convive con responsabilidades necesarias para mantener el proyecto común.</p>
+                                </div>
+                                <div class="mt-4 p-3 bg-amber-50 rounded-xl border border-amber-100 text-xs font-medium text-amber-900">
+                                    💡 La pertenencia al Getxotri no depende de resultados, ritmos, distancias ni número de competiciones.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Valores y Organización -->
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">Valores del Club</h5>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-start"><span class="font-bold text-red-900 w-28 shrink-0">01 Deporte:</span> Amateur, pero con rigor y disciplina.</li>
+                                    <li class="flex items-start"><span class="font-bold text-red-900 w-28 shrink-0">02 Respeto:</span> Compañerismo, normas y diversidad.</li>
+                                    <li class="flex items-start"><span class="font-bold text-red-900 w-28 shrink-0">03 Participación:</span> Tu ayuda y tus ganas cuentan.</li>
+                                    <li class="flex items-start"><span class="font-bold text-red-900 w-28 shrink-0">04 Ambiente:</span> Entrenamos y disfrutamos juntos.</li>
+                                    <li class="flex items-start"><span class="font-bold text-red-900 w-28 shrink-0">05 Educación:</span> Aprendemos con y desde el deporte.</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">Estructura & Tipos de Socio</h5>
+                                <p class="text-xs text-gray-500 mb-3">Asociación deportiva sin ánimo de lucro gobernada por la <strong>Asamblea de Socios</strong>, la <strong>Junta Directiva</strong> y <strong>Comisiones abiertas</strong>.</p>
+                                <div class="grid grid-cols-2 gap-3 mt-4">
+                                    <div class="bg-white p-3 rounded-xl border border-gray-200">
+                                        <span class="text-xs font-bold text-red-900 block">Socio Deportista</span>
+                                        <span class="text-xs text-gray-500">Acceso total a entrenamientos, servicios y recursos del club.</span>
+                                    </div>
+                                    <div class="bg-white p-3 rounded-xl border border-gray-200">
+                                        <span class="text-xs font-bold text-emerald-800 block">Socio Colaborador</span>
+                                        <span class="text-xs text-gray-500">Participación en eventos sociales y apoyo a la vida del club.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BLOQUE 02: Aspecto Deportivo y Entrenamientos -->
+                    <div id="block-2" class="guide-tab-pane hidden space-y-6">
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-red-700 mb-2">Planificación</h5>
+                                <h6 class="text-lg font-bold text-gray-900 mb-2">Joanes Goitisolo</h6>
+                                <p class="text-xs text-gray-500 mb-3">Entrenador del club</p>
+                                <p class="text-sm text-gray-600 leading-relaxed">Elabora semanalmente una programación orientada a corta, media y larga distancia que sirve como referencia para entrenar estructurado o acudir a sesiones presenciales.</p>
+                            </div>
+
+                            <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 md:col-span-2">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">Horarios Habituales del Equipo</h5>
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-white p-3 rounded-xl border border-gray-100 gap-2">
+                                        <div>
+                                            <span class="font-bold text-gray-900">🏊‍♂️ Natación</span>
+                                            <span class="text-xs text-gray-500 block">Lunes, miércoles y viernes</span>
+                                        </div>
+                                        <span class="text-xs font-semibold bg-red-50 text-red-900 px-3 py-1 rounded-lg self-start sm:self-auto">06:30–07:30 (2 calles) / 07:30–08:00 (1 calle)</span>
+                                    </div>
+                                    <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-white p-3 rounded-xl border border-gray-100 gap-2">
+                                        <div>
+                                            <span class="font-bold text-gray-900">🏃‍♂️ Carrera a Pie</span>
+                                            <span class="text-xs text-gray-500 block">Martes (Pista de Atletismo de Fadura)</span>
+                                        </div>
+                                        <span class="text-xs font-semibold bg-gray-100 text-gray-800 px-3 py-1 rounded-lg self-start sm:self-auto">19:00 h</span>
+                                    </div>
+                                    <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-white p-3 rounded-xl border border-gray-100 gap-2">
+                                        <div>
+                                            <span class="font-bold text-gray-900">🚴‍♂️ Ciclismo</span>
+                                            <span class="text-xs text-gray-500 block">Jueves (Velódromo de Fadura)</span>
+                                        </div>
+                                        <span class="text-xs font-semibold bg-gray-100 text-gray-800 px-3 py-1 rounded-lg self-start sm:self-auto">19:00 h</span>
+                                    </div>
+                                    <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-white p-3 rounded-xl border border-gray-100 gap-2">
+                                        <div>
+                                            <span class="font-bold text-gray-900">🎯 Técnica de Carrera</span>
+                                            <span class="text-xs text-gray-500 block">Sesión mensual específica dirigida por Iker</span>
+                                        </div>
+                                        <span class="text-xs font-semibold bg-amber-50 text-amber-900 px-3 py-1 rounded-lg self-start sm:self-auto">Mensual</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">Responsables de Disciplina</h5>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex justify-between border-b border-gray-200/60 pb-2"><span>🏊‍♂️ Natación:</span> <strong class="text-gray-900">Pablo y Eneko</strong></li>
+                                    <li class="flex justify-between border-b border-gray-200/60 pb-2"><span>🏃‍♂️ Carrera a pie:</span> <strong class="text-gray-900">Ander Juez y Leire Landa</strong></li>
+                                    <li class="flex justify-between"><span>🚴‍♂️ Ciclismo:</span> <strong class="text-gray-900">Ander Senado</strong></li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">Equipación & Ventajas</h5>
+                                <p class="text-sm text-gray-600 mb-3"><strong>Competición:</strong> Uso obligatorio de la equipación oficial en pruebas federadas representando al club.</p>
+                                <p class="text-sm text-gray-600 mb-3"><strong>Ventajas:</strong> 20% de descuento en la marca <strong>Orca</strong> mediante código del club y acuerdos activos con Crown Sport Nutrition, Fante y colaboradores.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BLOQUE 03: Finanzas -->
+                    <div id="block-3" class="guide-tab-pane hidden space-y-6">
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="bg-red-900 text-white p-8 rounded-3xl md:col-span-1 flex flex-col justify-between shadow-lg">
+                                <div>
+                                    <span class="text-xs font-bold uppercase tracking-widest text-red-200 block mb-2">Cuota Anual Establecida</span>
+                                    <div class="text-5xl font-black mb-2">110 €</div>
+                                    <span class="text-sm text-red-100 block">por temporada</span>
+                                </div>
+                                <div class="mt-6 pt-4 border-t border-red-800 text-xs text-red-200">
+                                    Asociación sin ánimo de lucro: el 100% del presupuesto se destina al funcionamiento, entrenamientos y proyectos comunes del club.
+                                </div>
+                            </div>
+
+                            <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 md:col-span-2 space-y-4">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-gray-500">¿Cómo se sostiene el club?</h5>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div class="bg-white p-4 rounded-xl border border-gray-100">
+                                        <span class="font-bold text-gray-900 block mb-1">Entradas</span>
+                                        <p class="text-xs text-gray-600">Cuota anual de socios (110€/temporada) y colaboraciones/patrocinios con entidades y marcas del sector.</p>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-xl border border-gray-100">
+                                        <span class="font-bold text-gray-900 block mb-1">Destino del Dinero</span>
+                                        <p class="text-xs text-gray-600">Gestión de entrenadores, instalaciones cedidas, actividades, logística y proyectos comunes.</p>
+                                    </div>
+                                </div>
+                                <div class="p-4 bg-gray-100 rounded-xl text-xs text-gray-600 leading-relaxed">
+                                    📌 <strong>Transparencia:</strong> La cuota se abona anualmente y es revisada en la Asamblea de Socios antes del inicio de cada temporada.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BLOQUE 04: Nuestro Triatlón: El Memorial -->
+                    <div id="block-4" class="guide-tab-pane hidden space-y-6">
+                        <div class="bg-gradient-to-br from-gray-900 to-gray-800 text-white p-8 rounded-3xl shadow-md">
+                            <span class="text-xs font-bold uppercase tracking-widest text-red-400 block mb-2">Identidad y Orgullo del Club</span>
+                            <h5 class="text-2xl md:text-3xl font-black mb-3">Triatlón de Getxo – Memorial Agustín Ugarte</h5>
+                            <p class="text-gray-300 text-sm leading-relaxed max-w-3xl mb-6">
+                                El circuito de triatlones de Euskadi existe gracias a clubes que dedican tiempo, esfuerzo y recursos para que otros podamos competir. Organizar el Memorial es nuestra forma de devolver al calendario lo que recibimos.
+                            </p>
+                            <div class="grid md:grid-cols-3 gap-4 border-t border-gray-700 pt-6">
+                                <div>
+                                    <span class="text-xs font-bold text-red-400 block mb-1">01 ANTES</span>
+                                    <p class="text-xs text-gray-400">Planificación, permisos, comunicación y tareas previas.</p>
+                                </div>
+                                <div>
+                                    <span class="text-xs font-bold text-amber-400 block mb-1">02 DURANTE</span>
+                                    <p class="text-xs text-gray-400">Voluntariado, seguridad, atención a deportistas y apoyo en circuito.</p>
+                                </div>
+                                <div>
+                                    <span class="text-xs font-bold text-emerald-400 block mb-1">03 DESPUÉS</span>
+                                    <p class="text-xs text-gray-400">Recogida, cierre, valoración y mejoras para la siguiente edición.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-red-50/60 p-6 rounded-2xl border border-red-100">
+                            <h6 class="font-bold text-red-900 mb-2">Formar parte del club implica colaborar con el Memorial</h6>
+                            <p class="text-sm text-gray-700">Tanto si compites como si no en la prueba, la colaboración de cada socio en la organización o aportando voluntarios es un pilar fundamental de nuestra cultura de equipo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
             <div class="grid lg:grid-cols-3 gap-8">
                 <!-- Columna de Beneficios (Estilo Nicepage Cards) -->
                 <div class="lg:col-span-2 grid md:grid-cols-2 gap-6">
@@ -229,6 +448,25 @@
                 btn.setAttribute('aria-expanded', 'false');
             });
         });
+
+        function switchTab(tabId) {
+            document.querySelectorAll('.guide-tab-pane').forEach(pane => pane.classList.add('hidden'));
+            document.querySelectorAll('.guide-tab-btn').forEach(btn => {
+                btn.classList.remove('bg-white', 'text-red-900', 'shadow-sm');
+                btn.classList.add('text-gray-600');
+                btn.setAttribute('aria-selected', 'false');
+            });
+
+            const activePane = document.getElementById(tabId);
+            if (activePane) activePane.classList.remove('hidden');
+
+            const activeBtn = document.getElementById('tab-' + tabId);
+            if (activeBtn) {
+                activeBtn.classList.add('bg-white', 'text-red-900', 'shadow-sm');
+                activeBtn.classList.remove('text-gray-600');
+                activeBtn.setAttribute('aria-selected', 'true');
+            }
+        }
     </script>
 </body>
 </html>

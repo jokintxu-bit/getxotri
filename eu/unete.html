@@ -128,6 +128,225 @@
                 </div>
             </div>
 
+            <!-- Atala: Ongietorri Gida eta Klubaren Essentzia (Gu Gara Getxotri) -->
+            <div class="mb-12 bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-gray-100">
+                <div class="flex flex-col md:flex-row md:items-center justify-between pb-6 mb-8 border-b border-gray-100 gap-4">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-red-700 bg-red-50 px-3 py-1 rounded-full border border-red-100">Zuzendaritzaren Dokumentu Ofiziala</span>
+                        <h4 class="text-3xl font-black text-gray-900 mt-2">Ongietorri Gida: Ezagutu Getxotri</h4>
+                        <p class="text-gray-500 text-sm mt-1">Nola dabilen kluba, zer eskaintzen duen eta gure taldeko kide izateak zer esan nahi duen.</p>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-xs font-bold text-gray-400 tracking-wider">GU GARA GETXOTRI</span>
+                    </div>
+                </div>
+
+                <!-- Pestaña Bidezko Nabigazioa (4 Bloke) -->
+                <div class="flex flex-wrap gap-2 mb-8 bg-gray-100 p-1.5 rounded-2xl" role="tablist">
+                    <button onclick="switchTab('block-1')" id="tab-block-1" class="guide-tab-btn flex-1 min-w-[140px] py-3 px-4 rounded-xl text-sm font-bold transition-all text-center bg-white text-red-900 shadow-sm" role="tab" aria-selected="true">
+                        01. Kluba
+                    </button>
+                    <button onclick="switchTab('block-2')" id="tab-block-2" class="guide-tab-btn flex-1 min-w-[140px] py-3 px-4 rounded-xl text-sm font-bold transition-all text-center text-gray-600 hover:text-gray-900" role="tab" aria-selected="false">
+                        02. Entrenamenduak
+                    </button>
+                    <button onclick="switchTab('block-3')" id="tab-block-3" class="guide-tab-btn flex-1 min-w-[140px] py-3 px-4 rounded-xl text-sm font-bold transition-all text-center text-gray-600 hover:text-gray-900" role="tab" aria-selected="false">
+                        03. Finantzak
+                    </button>
+                    <button onclick="switchTab('block-4')" id="tab-block-4" class="guide-tab-btn flex-1 min-w-[140px] py-3 px-4 rounded-xl text-sm font-bold transition-all text-center text-gray-600 hover:text-gray-900" role="tab" aria-selected="false">
+                        04. Memoriala
+                    </button>
+                </div>
+
+                <!-- Pestañen Edukia -->
+                <div id="guide-tab-content">
+                    <!-- 01 BLOKEA: Kluba eta bere Funtzionamendua -->
+                    <div id="block-1" class="guide-tab-pane space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-red-50/50 p-6 rounded-2xl border border-red-100">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-red-700 mb-2">Nortzuk Garen</h5>
+                                <h6 class="text-xl font-bold text-gray-900 mb-3">Triatloia modu askotara bizitzeko kluba</h6>
+                                <p class="text-sm text-gray-600 leading-relaxed mb-4">Helburu nagusia triatloiaren praktika sustatzea eta erraztea da. Esperientzia, adin, maila eta helburu desberdinei irekita gaude: hasiberrietatik hasi eta maila gorenean lehiatzen direnetaraino.</p>
+                                <div class="flex flex-wrap gap-2 text-xs font-semibold text-red-900">
+                                    <span class="bg-white px-3 py-1 rounded-lg border border-red-100">Sprint</span>
+                                    <span class="bg-white px-3 py-1 rounded-lg border border-red-100">Distantzia Erdia</span>
+                                    <span class="bg-white px-3 py-1 rounded-lg border border-red-100">Distantzia Luzea</span>
+                                    <span class="bg-white px-3 py-1 rounded-lg border border-red-100">Duatloia</span>
+                                    <span class="bg-white px-3 py-1 rounded-lg border border-red-100">Taldeak</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Oinarrizko Printzipioa</h5>
+                                <h6 class="text-xl font-bold text-gray-900 mb-3">Kirol askatasuna, konpromiso kolektiboa</h6>
+                                <div class="space-y-3 text-sm text-gray-600">
+                                    <p><strong>Kirol askatasuna:</strong> Pertsona bakoitzak erabakitzen du nola entrenatu, zenbat lehiatu, zer distantzia egin eta zein diren bere helburuak.</p>
+                                    <p><strong>Konpromiso kolektiboa:</strong> Bakarkako askatasuna proiektu komuna mantentzeko beharrezkoak diren erantzukizunekin batera bizi da.</p>
+                                </div>
+                                <div class="mt-4 p-3 bg-amber-50 rounded-xl border border-amber-100 text-xs font-medium text-amber-900">
+                                    💡 Getxotriko kide izatea ez dago emaitzen, erritmoen, distantzien edo lehiaketa kopuruaren mende.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Balioak eta Antolakuntza -->
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">Klubaren Balioak</h5>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-start"><span class="font-bold text-red-900 w-28 shrink-0">01 Kirola:</span> Amateurra, baina rigoarekin eta diziplinarekin.</li>
+                                    <li class="flex items-start"><span class="font-bold text-red-900 w-28 shrink-0">02 Errespetua:</span> Elkarlana, arauak eta aniztasuna.</li>
+                                    <li class="flex items-start"><span class="font-bold text-red-900 w-28 shrink-0">03 Partaidetza:</span> Zure laguntzak eta gogoak balio dute.</li>
+                                    <li class="flex items-start"><span class="font-bold text-red-900 w-28 shrink-0">04 Giro Ona:</span> Elkarrekin entrenatzen eta gozatzen dugu.</li>
+                                    <li class="flex items-start"><span class="font-bold text-red-900 w-28 shrink-0">05 Hezkuntza:</span> Kirolarekin eta kiroletik ikasten dugu.</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">Egitura eta Bazkide Motak</h5>
+                                <p class="text-xs text-gray-500 mb-3">Irabazi asmorik gabeko kirol elkartea, <strong>Bazkideen Batzarrak</strong>, <strong>Zuzendaritza Batzordeak</strong> eta <strong>Batzorde Irekiek</strong> gobernatua.</p>
+                                <div class="grid grid-cols-2 gap-3 mt-4">
+                                    <div class="bg-white p-3 rounded-xl border border-gray-200">
+                                        <span class="text-xs font-bold text-red-900 block">Bazkide Kirolaria</span>
+                                        <span class="text-xs text-gray-500">Sarbide osoa entrenamendu, zerbitzu eta baliabideetara.</span>
+                                    </div>
+                                    <div class="bg-white p-3 rounded-xl border border-gray-200">
+                                        <span class="text-xs font-bold text-emerald-800 block">Bazkide Laguntzailea</span>
+                                        <span class="text-xs text-gray-500">Ekitaldi sozialetan parte hartzea eta klubaren bizitzari laguntza.</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 02 BLOKEA: Kirol Alderdia eta Entrenamenduak -->
+                    <div id="block-2" class="guide-tab-pane hidden space-y-6">
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-red-700 mb-2">Plangintza</h5>
+                                <h6 class="text-lg font-bold text-gray-900 mb-2">Joanes Goitisolo</h6>
+                                <p class="text-xs text-gray-500 mb-3">Klubeko entrenatzailea</p>
+                                <p class="text-sm text-gray-600 leading-relaxed">Astero distantzia labur, erdi eta luzeetara bideratutako programazioa prestatzen du, era strukturatuan entrenatzeko edo aurrez aurreko saioetara joateko erreferentzia gisa balio duena.</p>
+                            </div>
+
+                            <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 md:col-span-2">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">Taldearen Ohiko Ordutegiak</h5>
+                                <div class="space-y-3 text-sm">
+                                    <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-white p-3 rounded-xl border border-gray-100 gap-2">
+                                        <div>
+                                            <span class="font-bold text-gray-900">🏊‍♂️ Natazioa</span>
+                                            <span class="text-xs text-gray-500 block">Astelehen, asteazken eta ostirala</span>
+                                        </div>
+                                        <span class="text-xs font-semibold bg-red-50 text-red-900 px-3 py-1 rounded-lg self-start sm:self-auto">06:30–07:30 (2 kale) / 07:30–08:00 (1 kale)</span>
+                                    </div>
+                                    <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-white p-3 rounded-xl border border-gray-100 gap-2">
+                                        <div>
+                                            <span class="font-bold text-gray-900">🏃‍♂️ Oinezko Lasterketa</span>
+                                            <span class="text-xs text-gray-500 block">Asteartea (Fadurako Atletismo Pista)</span>
+                                        </div>
+                                        <span class="text-xs font-semibold bg-gray-100 text-gray-800 px-3 py-1 rounded-lg self-start sm:self-auto">19:00 h</span>
+                                    </div>
+                                    <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-white p-3 rounded-xl border border-gray-100 gap-2">
+                                        <div>
+                                            <span class="font-bold text-gray-900">🚴‍♂️ Txirrindularitza</span>
+                                            <span class="text-xs text-gray-500 block">Osteguna (Fadurako Belodromoa)</span>
+                                        </div>
+                                        <span class="text-xs font-semibold bg-gray-100 text-gray-800 px-3 py-1 rounded-lg self-start sm:self-auto">19:00 h</span>
+                                    </div>
+                                    <div class="flex flex-col sm:flex-row sm:items-center justify-between bg-white p-3 rounded-xl border border-gray-100 gap-2">
+                                        <div>
+                                            <span class="font-bold text-gray-900">🎯 Lasterketa Teknika</span>
+                                            <span class="text-xs text-gray-500 block">Ikerrek zuzendutako hilabeteko saio espezifikoa</span>
+                                        </div>
+                                        <span class="text-xs font-semibold bg-amber-50 text-amber-900 px-3 py-1 rounded-lg self-start sm:self-auto">Hilabetero</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">Diziplina Bakoitzeko Arduradunak</h5>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex justify-between border-b border-gray-200/60 pb-2"><span>🏊‍♂️ Natazioa:</span> <strong class="text-gray-900">Pablo eta Eneko</strong></li>
+                                    <li class="flex justify-between border-b border-gray-200/60 pb-2"><span>🏃‍♂️ Oinezko lasterketa:</span> <strong class="text-gray-900">Ander Juez eta Leire Landa</strong></li>
+                                    <li class="flex justify-between"><span>🚴‍♂️ Txirrindularitza:</span> <strong class="text-gray-900">Ander Senado</strong></li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-3">Ekipamendua eta Abantailak</h5>
+                                <p class="text-sm text-gray-600 mb-3"><strong>Lehiaketa:</strong> Nahitaezkoa da ekipamendu ofiziala erabiltzea klubaren ordezkari gisa federatutako probetan.</p>
+                                <p class="text-sm text-gray-600 mb-3"><strong>Abantailak:</strong> %20ko deskontua <strong>Orca</strong> markan klubeko kodearekin eta hitzarmen aktiboak Crown Sport Nutrition, Fante eta laguntzaileekin.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 03 BLOKEA: Finantzak -->
+                    <div id="block-3" class="guide-tab-pane hidden space-y-6">
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="bg-red-900 text-white p-8 rounded-3xl md:col-span-1 flex flex-col justify-between shadow-lg">
+                                <div>
+                                    <span class="text-xs font-bold uppercase tracking-widest text-red-200 block mb-2">Ezarritako Urteko Kuota</span>
+                                    <div class="text-5xl font-black mb-2">110 €</div>
+                                    <span class="text-sm text-red-100 block">denboraldi bakoitzeko</span>
+                                </div>
+                                <div class="mt-6 pt-4 border-t border-red-800 text-xs text-red-200">
+                                    Irabazi asmorik gabeko elkartea: aurrekontuaren %100 klubaren funtzionamendura, entrenamenduetara eta proiektu komunetara bideratzen da.
+                                </div>
+                            </div>
+
+                            <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 md:col-span-2 space-y-4">
+                                <h5 class="text-xs font-bold uppercase tracking-wider text-gray-500">Nola mantentzen da kluba?</h5>
+                                <div class="grid md:grid-cols-2 gap-4">
+                                    <div class="bg-white p-4 rounded-xl border border-gray-100">
+                                        <span class="font-bold text-gray-900 block mb-1">Sarrerak</span>
+                                        <p class="text-xs text-gray-600">Bazkideen urteko kuota (110€/denboraldia) eta erakunde eta markekin lortutako lankidetzak/babesak.</p>
+                                    </div>
+                                    <div class="bg-white p-4 rounded-xl border border-gray-100">
+                                        <span class="font-bold text-gray-900 block mb-1">Diruaren Helburua</span>
+                                        <p class="text-xs text-gray-600">Entrenatzaileen kudeaketa, utzitako instalazioak, jarduerak, logistika eta proiektu komunak.</p>
+                                    </div>
+                                </div>
+                                <div class="p-4 bg-gray-100 rounded-xl text-xs text-gray-600 leading-relaxed">
+                                    📌 <strong>Gardentasuna:</strong> Kuota urtero ordaintzen da eta Bazkideen Batzarrean berrikusten da denboraldi bakoitza hasi aurretik.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 04 BLOKEA: Gure Triatloia: Memoriala -->
+                    <div id="block-4" class="guide-tab-pane hidden space-y-6">
+                        <div class="bg-gradient-to-br from-gray-900 to-gray-800 text-white p-8 rounded-3xl shadow-md">
+                            <span class="text-xs font-bold uppercase tracking-widest text-red-400 block mb-2">Klubaren Nortasuna eta Harrotasuna</span>
+                            <h5 class="text-2xl md:text-3xl font-black mb-3">Getxoko Triatloia – Agustín Ugarte Memoriala</h5>
+                            <p class="text-gray-300 text-sm leading-relaxed max-w-3xl mb-6">
+                                Euskadiko triatloi zirkuitua beste klub batzuek denbora, ahalegina eta baliabideak bideratzen dituztelako existitzen da. Memoriala antolatzea jasotzen duguna egutegiari bueltatzeko gure modua da.
+                            </p>
+                            <div class="grid md:grid-cols-3 gap-4 border-t border-gray-700 pt-6">
+                                <div>
+                                    <span class="text-xs font-bold text-red-400 block mb-1">01 AURRETIK</span>
+                                    <p class="text-xs text-gray-400">Plangintza, baimenak, komunikazioa eta aurretiko lanak.</p>
+                                </div>
+                                <div>
+                                    <span class="text-xs font-bold text-amber-400 block mb-1">02 TARTEAN</span>
+                                    <p class="text-xs text-gray-400">Boluntariotza, segurtasuna, kirolariei arreta eta ibilbidean laguntza.</p>
+                                </div>
+                                <div>
+                                    <span class="text-xs font-bold text-emerald-400 block mb-1">03 ONDOREN</span>
+                                    <p class="text-xs text-gray-400">Jasotzea, amaiera, balorazioa eta hurrengo ediziorako hobekuntzak.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-red-50/60 p-6 rounded-2xl border border-red-100">
+                            <h6 class="font-bold text-red-900 mb-2">Klubeko kide izateak Memorialean laguntzea dakar</h6>
+                            <p class="text-sm text-gray-700">Proban lehiatu ala ez, bazkide bakoitzaren laguntza antolakuntzan edo boluntarioak lortuz gure talde-kulturaren oinarrizko zutabea da.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
             <div class="grid lg:grid-cols-3 gap-8">
                 <div class="lg:col-span-2 grid md:grid-cols-2 gap-6">
                     <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
@@ -217,6 +436,25 @@
                 btn.setAttribute('aria-expanded', 'false');
             });
         });
+
+        function switchTab(tabId) {
+            document.querySelectorAll('.guide-tab-pane').forEach(pane => pane.classList.add('hidden'));
+            document.querySelectorAll('.guide-tab-btn').forEach(btn => {
+                btn.classList.remove('bg-white', 'text-red-900', 'shadow-sm');
+                btn.classList.add('text-gray-600');
+                btn.setAttribute('aria-selected', 'false');
+            });
+
+            const activePane = document.getElementById(tabId);
+            if (activePane) activePane.classList.remove('hidden');
+
+            const activeBtn = document.getElementById('tab-' + tabId);
+            if (activeBtn) {
+                activeBtn.classList.add('bg-white', 'text-red-900', 'shadow-sm');
+                activeBtn.classList.remove('text-gray-600');
+                activeBtn.setAttribute('aria-selected', 'true');
+            }
+        }
     </script>
 </body>
 </html>
